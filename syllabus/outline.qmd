@@ -1,0 +1,295 @@
+---
+title: "Outline"
+format: pdf
+editor: source
+---
+
+
+# Intro + Personal Networks [2 lectures]
+
+## Lecture - overview of course; basic graph theory
+
+## Lab 00 - getting started in Jupyter notebooks [old lab0]
+
+Goals:
+
+- quick overview of how Jupyter notebooks work
+- test submitting an assignment
+
+Notes:
+
+from Data 8 - basically, to test submission pipeline
+
+
+
+## Lecture - Personal networks; social connectedness and isolation in America
+
+TODO - some kind of support / reading for students would be helpful
+
+## Hwk 01 - collecting personal network survey data [old hwk01]
+
+  Goals:
+  - understand how personal network data are collected (reflect on strengths + limitations)
+  - understand quantitative features of UC Berkeley student personal networks
+  - collect ARD info on UC Berkeley students (later used in a lecture demo)
+  ? collect interpersonal contact info on UC Berkeley students?
+  - ask students: what is a name generator q you think would be effective at eliciting information about social isolation at UC Berkeley?
+
+## Lab 01 - analyzing personal network survey data [old lab02]
+    -> TODO - this should incorporate new material reviewing sampling + the bootstrap
+    -> goals: work with personal network survey data (reshape, etc)
+    -> goals: some kind of hypothesis test for significance
+    -> analyze personal network data from GSS (old hwk 01)
+    
+## Hwk 02 - analyzing personal network data from the GSS
+
+Goals: use skills from lab 01 to analyze personal network data we collected on the our survey
+(so, take analysis of last year's hwk 02 but update it to be about this year's student survey data)
+
+## Lab 02 - working w/ complete network data [old lab01 + lecture demo]
+
+Goals:
+- understand how a network is represented in a computer
+- understand how to load a network from a file
+- understand how to calculate some simple features of a network
+  - avg degree, degree distribution
+  - avg shortest path length / diameter / periphery / core / radius
+  - clustering coefficient
+- understand how to plot networks (and some limitations of doing so)
+- a couple of important formulas:
+  - max number of edges on n nodes
+  - avg degree in terms of number of edges, number of nodes
+Data: Add Health survey data
+
+from lecture demo
+
+* loading a complete network
+* avg degree
+* plotting
+* most possible edges in a net with n nodes
+
+from prev lab (quite long):
+
+* Add health study
+* representing a network in a computer
+* plotting networks
+* degree distribution
+* average degree + formula
+* avg shortest path lenth / diameter / periphery / core / radius
+* repeat calculations on all add health networks
+
+
+
+
+
+## Hwk 03 - complete network data
+
+Goals: assess skills from Lab 02
+- open up a complete network dataset
+- calculate some features of the network
+- plot the degree distribution
+- [old hwk02 on the clustering coefficient has material]
+
+## Reading - TODO
+    -> candidates: SOWT original, Onnela et al paper
+
+
+
+
+
+# Network structure [6 lectures]
+
+## Lecture - Triadic closure; strength of weak ties
+    - idea of triadic closure
+    - quantifying closure - clustering coefficient
+    -> Lecture Demo: triadic closure in an email network
+    - sowt
+      - bridge + local bridge + span of a local bridge
+      - tie strength
+      - strong triadic closure property, weak triadic closure property
+      - Onnela et al / tie strength in mobile phone datasets
+      
+## ! Lecture - Social capital and structural holes [this seems thin]
+    -> Lecture Demo: strength of weak ties
+    - TODO - add some more about social capital
+      - Jackson - typology of social capital
+      - ? Portes review article
+
+## Lecture - Networks in context - homophily; positive + negative networks
+    -> NB: two different sets of slides
+    -> Lecture Demo: structural balance
+
+## Lab 03 - Enriching network data and testing a hypothesis about homophily [old lab03]
+  Goals:
+    - add attributes to nodes and edges, and calculate things involving attributes
+    - discuss ways to quantify homophily
+    - test a hypothesis related to homophily
+    - TODO - something about positive/negative edges?
+    -> TODO: add some overview/review of hypothesis testing if this was not done in an earlier lab
+    
+## Hwk 04 - Problem set I
+  Goals: assess problem-solving with concepts covered so far, including:
+    - look at old [hwk04], which has lots of qs
+    - graph theory concepts (paths, cycles, connected components)
+    - balance theory
+    - friendship paradox
+    - strength of weak ties
+    - homophily / assortativity coefficients
+    - TODO others?
+    
+## Lecture - Intro to mathematical models; the ER random network model
+
+## ? Lecture - configuration model + stochastic block model
+    - revisit homophily w/ this context...
+    -> should this go after midterm?
+    
+## Lab 04 - Exploring mathematical models of network structure
+  Goals:
+    - experience simulating networks from mathematical models
+    - using ER, then configuration model as null hypothesis in a hypothesis test
+
+
+## Lecture - Centrality; The friendship paradox
+    - indices of centrality
+        - could add 1/(avg distance) as a measure of centrality in SIR/centrality notebook (this is called 'closeness centrality', I think)
+    - jackson et al models?
+    - maybe Ansell/Padgett - medici example, others?
+
+## Reading - TODO
+
+
+
+# Small worlds and beyond [6 lectures]
+
+## Lecture - Small worlds
+
+## Lecture - Search in small worlds
+
+## Lecture - Affiliation networks; foci; one-mode projections of bipartite networks
+
+## Lab 05 - Two-mode networks; Friendship paradox [old lab04]
+
+  -> Maybe borrow material from later NB on friendship paradox? [old hwk7]
+
+    
+## Hwk 05 - advanced complete network data
+  Goals:
+    - assess skills from lab 03, enriching network data + lab 04, exploring 
+    - open a network that has node attributes with minimal hand-holding
+    - calculate 
+      - avg degree
+      - clustering coef
+      - avg path length
+    - test for homophily (maybe using more advanced null model)
+    - maybe one-mode projection of a two-mode network
+    - NB: MIGHT GIVE EXTRA TIME FOR THIS ONE 
+  -> MAYBE borrow material from later notebook stuff on betwenness centrality?
+  -> Maybe borrow material from later NB on friendship paradox? [old hwk7]
+    
+
+## Hwk 06 - Problem set II
+  Goal: assess problem-solving with
+    - ER model
+    - advanced network models
+    - scale-free networks
+    - two-mode networks
+    - TODO others?
+
+## Lecture - Scale-free networks
+
+## Lecture - Community detection [NB: could make this a little longer]
+
+## Lecture - empirical studies of network structure 
+    -> include friendship paradox stuff here...
+
+## Reading - TODO
+
+
+
+
+# Dynamics: simple contagion [4 lectures]
+
+## Lecture - diseases and simple contagion; SIR model [maybe add SI model, SIS model]
+
+## Lecture - SIR model on networks [NB: could make this a little longer]
+    * the Menczer et al book (First Course in Network Science) has a good chapter on dynamics (ch 7), which has some interesting possible extensions
+        - SIS and rumor spreading model
+        - more on cascades
+        - opinion dynamics
+        - co-evolution of networks and dynamics
+
+## Lab 06 - Simple contagion [old lab05]
+
+  * NB: some of the centrality material may get moved to earlier in the semester
+  * old lab05 has centrality and SIR model stuff...
+
+## Hwk 07 - centrality/epidemic model in US legislators [old hwk06]
+
+- maybe incorporate community detection?
+
+## Lecture - Sexual networks, concurrency and HIV
+
+## Lecture - empirical studies of simple contagion [TODO - see notes on stuff to add]
+
+## Reading - TODO
+  
+  
+  
+  
+# Dynamics: complex contagion and social influence [5 lectures]
+
+## Lecture - Social influence, herding, and cascades
+
+##Lecture - Threshold models and complex contagion [NB: look at notes on complex contagion lectures] 
+
+? Add material on imitation and social learning? (Bass model? DeGroot learning?)
+
+## Lab 07: Mini-project prep
+
+  Goals:
+    - have students start from just a dataset and some questions, then write a notebook
+      to perform the analysis + submit the results
+
+## Mini-project
+
+  Goals:
+    - from lab 07: have students start from just a dataset and some questions, then write a notebook
+      to perform the analysis + submit the results
+    - analysis should cover
+      - open up a new network dataset
+      - calculate avg degree, degree distn, clustering coefficient
+      - extract largest component
+      - identify most central nodes?
+      - and/or test for homophily with respect to some characteristic? 
+      
+  Note: on this assignment, we might let them choose to work with a partner?
+
+## Lecture - Complex contagion on networks I 
+
+## Lecture - Complex contagion on networks II
+
+## Lecture - Is obesity contagious? Experimental + observational studies of complex contagion
+
+## Hwk 08 - Problem set III
+
+Goals: assess problem-solving with concepts covered in last part of class, including
+    - community detection 
+    - simple contagion / SIR model 
+    - influence / Bass model / DeGroot model
+    - complex contagion
+    
+
+## Reading
+
+
+
+
+# Wrap-up [1 lecture]
+
+Leceture - Wrap up
+
+
+
+
+
+

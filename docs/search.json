@@ -1,0 +1,359 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Social Networks (Demography 180)",
+    "section": "",
+    "text": "(Syllabus last updated: 2025-August-13)"
+  },
+  {
+    "objectID": "index.html#quick-links",
+    "href": "index.html#quick-links",
+    "title": "Social Networks (Demography 180)",
+    "section": "Quick links",
+    "text": "Quick links\nClass meetings: Tuesdays and Thursdays, 12:30-2:00PM, 166 Social Science Building\n Web: https://www.dennisfeehan.org/demog180-fa2025\nEd page: TODO\nGradescope page: TODO\nBcourses page: TODO\nLecture slides: TODO\n Final exam: TBA"
+  },
+  {
+    "objectID": "index.html#staff",
+    "href": "index.html#staff",
+    "title": "Social Networks (Demography 180)",
+    "section": "Staff",
+    "text": "Staff\nProfessor Dennis Feehan, feehan [at] berkeley.edu\nOffice hours: (see Ed post)\nTA: Xinghe Pan\nTA: Nick Nolte"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Social Networks (Demography 180)",
+    "section": "Overview",
+    "text": "Overview\nThe science of social networks focuses on measuring, modeling, and understanding the different ways that people are connected to one another. In this class, we will use a broad toolkit of theories and methods drawn from the social, natural, and mathematical sciences to learn what a social network is, to understand how to work with social network data, and to illustrate some of the ways that social networks can be useful in theory and in practice. We will see that network ideas are powerful enough to be used everywhere from CDC and UNAIDS, where network models help epidemiologists prevent the spread of HIV, to Silicon Valley, where data scientists use network ideas to build products that enable people all across the globe to connect with one another.\nPlease re-check the syllabus frequently; it will be updated as the semester progresses\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTheme\nWeek\nDate\nTopic\nDemo\nLab\nHwk\n\n\n\n\nIntro + Personal Networks\n1\nWed, Aug 27\nIntro / what social networks are / basic graph theory / class info\n\n\n\n\n\n\n\n\n\n\n2\nMon, Sep 1\nPersonal networks; social connectedness and social isolation in America\n\n\n\n\n\n\n\n\nNetwork structure: foundations\n2\nWed, Sep 3\nTriadic closure\n\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 8\nStrength of Weak Ties, Social Capital, Structural Holes\n\n\n\n\n\n\n\n\n\n\n3\nWed, Sep 10\nNetwork centrality / the Friendship Paradox\n\n\n\n\n\n\n\n\n\n\n4\nMon, Sep 15\nNetworks in context; homophily; affiliation networks; and foci\n\n\n\n\n\n\n\n\n\n\n4\nWed, Sep 17\nPositive and negative networks\n\n\n\n\n\n\n\n\n\n\n5\nMon, Sep 22\nIntro to mathematical network models; the Erdos-Renyi model and its predictions\n\n\n\n\n\n\n\n\nSmall worlds\n5\nWed, Sep 24\nSmall worlds\n\n\n\n\n\n\n\n\n\n\n6\nMon, Sep 29\nSearch in small worlds\n\n\n\n\n\n\n\n\n\n\n6\nWed, Oct 1\nScale-free networks\n\n\n\n\n\n\n\n\n\n\n7\nMon, Oct 6\nMidterm review\n\n\n\n\n\n\n\n\n\n\n7\nWed, Oct 8\nMidterm\n\n\n\n\n\n\n\n\nNetwork structure: advanced\n8\nMon, Oct 13\nMore models: configuration model and stochastic block model\n\n\n\n\n\n\n\n\n\n\n8\nWed, Oct 15\nCommunity detection\n\n\n\n\n\n\n\n\n\n\n9\nMon, Oct 20\nEmpirical studies of network structure\n\n\n\n\n\n\n\n\nDynamics: Simple contagion\n9\nWed, Oct 22\nDiseases and simple contagion in general; SIR model\n\n\n\n\n\n\n\n\n\n\n10\nMon, Oct 27\nSIR model on networks; centrality, influence and network disease models\n\n\n\n\n\n\n\n\nConcurrency\n10\nWed, Oct 29\nSexual networks, concurrency, and HIV\n\n\n\n\n\n\n\n\n\n\n11\nMon, Nov 3\nEmpirical studies of simple contagion\n\n\n\n\n\n\n\n\nSocial influence\n11\nWed, Nov 5\nSocial influence, herding, and cascades\n\n\n\n\n\n\n\n\n\n\n12\nMon, Nov 10\nThreshold models and complex contagion\n\n\n\n\n\n\n\n\nDynamics: Complex contagion and social influence\n12\nWed, Nov 12\nComplex contagion on networks\n\n\n\n\n\n\n\n\n\n\n13\nMon, Nov 17\nGuest lecture - Chris Soria\n\n\n\n\n\n\n\n\n\n\n13\nWed, Nov 19\nComplex contagion on networks, cont. + Empirical studies of complex contagion\n\n\n\n\n\n\n\n\n\n\n14\nMon, Nov 24\nNO CLASS\n\n\n\n\n\n\n\n\n\n\n14\nWed, Nov 26\nTHANKSGIVING (NO CLASS)\n\n\n\n\n\n\n\n\n\n\n15\nMon, Dec 1\nCooperation and networks\n\n\n\n\n\n\n\n\n\n\n15\nWed, Dec 3\nEmpirical studies of complex contagion/cooperation + Wrap up\n\n\n\n\n\n\n\n\n\n\n16\nMon, Dec 8\nREADING WEEK"
+  },
+  {
+    "objectID": "index.html#requirements",
+    "href": "index.html#requirements",
+    "title": "Social Networks (Demography 180)",
+    "section": "Requirements",
+    "text": "Requirements\n\nLectures\nLectures will introduce and develop key theoretical and technical concepts in the study of social networks. To illustrate these ideas, some of the lectures will have a live lab component, where we will interactively discuss and work through an analysis in a Jupyter notebook. These live labs will help us explore and develop intuition about key concepts in the course.\nThe lectures are organized so that the first set of material, up to the mid-term exam, is a survey of the core theories, concepts, and methods needed to be familiar with social networks. After the mid-term, the lectures will turn to an exploration of how these core ideas have been used, modified, and deepened in several different topic areas.\nYou are responsible for all of the material covered in lectures, as well as any announcements made there.\n\n\nRequired readings\nThe course readings will include selections from the textbook Networks, Crowds, and Markets by Easley and Kleinberg:\n\nDavid Easley and Jon Kleinberg Networks, Crowds, and Markets: Reasoning about a Highly Connected World (Cambridge University Press, 2010).\n\nWe will also read chapters from popular science books written by leading network researchers, including selections from\n\nD. J. Watts Six Degrees: The Science of a Connected Age (WW Norton & Company, 2003).\nHelen Epstein The Invisible Cure: Why We Are Losing the Fight Against AIDS in Africa (Macmillan, 2008).\n\nFinally, we will read several journal and newspaper articles.\nThe readings serve two purposes: (1) they provide an introduction and reference for key concepts that we will need to study social networks; (2) they illustrate how social network ideas get used in real world research and applications across many different disciplines. You are expected to do the reading before each class. Whenever possible, PDFs of the readings will be posted on the bCourses site.\n\n\nHomeworks and labs\nThere will be a total of 6 to 8 homeworks, a similar number of labs, and one mini-project. These assignments are a critical part of the learning you will do in this class: they give you an opportunity to explore the topics we cover in the readings and in lecture on your own. They also give you a chance to practice your writing and your data analysis and programming skills. Most homeworks and labs will ask you to provide some written arguments and to solve some problems by writing Python code in a Jupyter notebook.\nLabs are graded based on effort; therefore, you can get full credit on a lab even if you do not get all of the answers right. Labs must be handed in on time for full credit.\nHomeworks and are graded on correctness and must be handed in on time for full credit. However, we will drop the homework with the lowest score; thus, you can miss handing in one homework over the course of the semester without it affecting your grade. (Note that you cannot drop the grade for the mini-project.)\nThe mini-project is like an extended homework that comes after all of the notebook-based homeworks. The goal is to give you a chance to start from scratch with a new network dataset and to demonstrate that you can perform an analysis on the network with minimal hand-holding. It will count as two homeworks.\nCollaboration: It can be helpful and educational to discuss the assignments with other students in the class, but (1) all of the work should be your own (i.e., you are not allowed to just copy code, answers, or arguments); (2) you should make a note of the names of the other students you worked with when handing your assignments in. Please treat AI tools like ChatGPT like another student: follow rules (1) and (2); that is, don’t copy code or text directly from an AI tool and please make a note of any tool you consulted at the top of your assignment.\n\n\nExams\nThere will be two in-class closed book examinations. The mid-term examination will be held during normal class time in our normal classroom; the timing of this midterm will be designed to assess your mastery of the core concepts in social networks. The final will be held during the final exam period (see the date/time above). The final exam will be cumulative.\n\n\nParticipation and quizzes\nIn some lectures, you will be asked to participate in discussions and interactive demonstrations. There will also be a small number (about 2) quizzes on bCourses over the semester. These quizzes will consist of a few multiple choice questions; the goal of these quizzes will be to ensure that you are staying up to date with the reading and lecture materials covered in the class (including guest lectures).\n\n\n\n\nSummary\n\n\n\nComponent\n% of grade\n\n\n\n\nHomeworks (you can drop your lowest score)\n35\n\n\nLabs\n15\n\n\nMid-term exam\n15\n\n\nFinal exam\n30\n\n\nParticipation + Quizzes\n5"
+  },
+  {
+    "objectID": "index.html#detailed-modules",
+    "href": "index.html#detailed-modules",
+    "title": "Social Networks (Demography 180)",
+    "section": "Detailed modules",
+    "text": "Detailed modules\n\n\nIntroduction to social networks and Personal networks\nReading:\n\nWatts Six Degrees. preface-Ch.1\nEasley and Kleinberg Networks, Crowds, and Markets. Ch.1-Ch.2\n[optional] Fischer, Still connected, esp. Ch. 2 and 7\n\n\n\nNetwork structure: foundations\nReading:\n\nEasley and Kleinberg Networks, Crowds, and Markets. Ch. 3.1-3.3 (Triadic closure + tie strength)\nEasley and Kleinberg Networks, Crowds, and Markets. Ch. 3.5 (Social capital)\nEasley and Kleinberg Networks, Crowds, and Markets. Ch.5.1-5.2 (Positive and negative relationships)\nFriends you can count on\nWhy your friends have more friends than you do\nWatts Six Degrees. Ch. 2 (Random networks)\nTBD - possibly some empirical examples\n\n\n\nSmall worlds and beyond\nReadings:\n\nEasley and Kleinberg Networks, Crowds, and Markets. Ch.4.3-4.4 (Affiliation networks)\nWatts Six Degrees. Ch. 3 (Small worlds)\nWatts Six Degrees. Ch. 4 (Beyond small worlds; scale-free networks)\nEasley and Kleinberg Networks, Crowds, and Markets. Ch. 20.1-20.2 (Small worlds)\nWatts Six Degrees. Ch. 5 (Search in networks)\nEasley and Kleinberg Networks, Crowds, and Markets. Ch. 20.3-20.5 (Search in small worlds)\nEasley and Kleinberg Networks, Crowds, and Markets. Ch. 18.1-18.5 (Scale-free networks)\n\n\n\nNetwork structure: advanced\nReading:\nTBD\n\n\nSimple contagion\nReading:\n\nWatts Six Degrees. Ch.6\nEasley and Kleinberg Networks, Crowds, and Markets. Ch. 21.1-21.3 (The SIR epidemic model)\n\n\n\nConcurrency in sexual networks\n\nSexual networks, concurrency, and HIV\nEpstein The Invisible Cure. Ch.2-4\nOPTIONAL: Easley and Kleinberg Networks, Crowds, and Markets. Ch. 21.6\nNOTE: if you are interested in reading more of the debate over concurrency, this issue of the journal that Lurie and Rosenthal published in has papers on both sides. (These additional papers are not required reading.)\n\n\n\n\nSocial influence\nReading:\n\nEasley and Kleinberg Networks, Crowds, and Markets. Ch. 16.1-16.2; parts of 16.3-16.6; 16.7\nWatts Six Degrees. Ch. 7\n\n\n\nComplex contagion\nReading:\n\nWatts Six Degrees. Ch. 8\nEasley and Kleinberg Networks, Crowds, and Markets. Ch. 19.1-19.6\nStudy says obesity can be contagious\n\n\n\n\nOther class policies\nReligious Accommodations\nRequests to accommodate a student’s religious creed by scheduling tests or examinations at alternative times should be submitted directly to the instructor. Reasonable common sense, judgment and the pursuit of mutual goodwill should result in the positive resolution of scheduling conflicts. The regular campus appeals process applies if a mutually satisfactory arrangement cannot be achieved.\nStatement on Academic Freedom\nBoth students and instructors have rights to academic freedom. Please respect the rights of others to express their points of view in the classroom.\nDSP Accommodations\nThe purpose of academic accommodations is to ensure that all students have a fair chance at academic success. Disability, or hardships such as basic needs insecurity, uncertain documentation and immigration status, medical and mental health concerns, pregnancy and parenting, significant familial distress, and experiencing sexual violence or harassment, can affect a student’s ability to satisfy particular course requirements. Students have the right to reasonable academic accommodations, without having to disclose personal information to instructors. For more information about accommodations, scheduling conflicts related to religious creed or extracurricular activities, please see the Academic Accommodations hub website.\nStudent Resources\nThe Student Learning Center provides a wide range of resources to promote learning and academic success for students. For information regarding these services, please consult the Student Learning Center Website: https://slc.berkeley.edu/\nClassroom Climate\nWe are all responsible for creating a learning environment that is welcoming, inclusive, equitable, and respectful. If you feel that these expectations are not being met, you can consult your instructor(s) or seek assistance from campus resources (see the Academic Accommodations website).\nAcademic Integrity\nThe high academic standard at the University of California, Berkeley, is reflected in each degree that is awarded. As a result, every student is expected to maintain this high standard by ensuring that all academic work reflects unique ideas or properly attributes the ideas to the original sources.\nThese are some basic expectations of students with regards to academic integrity:\n\nAny work submitted should be your own individual thoughts, and should not have been submitted for credit in another course unless you have prior written permission to re-use it in this course from this instructor.\nAll assignments must use “proper attribution,” meaning that you have identified the original source and extent or words or ideas that you reproduce or use in your assignment. This includes drafts and homework assignments!\nIn general, you should not turn in work that was done by an AI tool, such as an LLM (like ChatGPT). If you have any questions, please ask an instructor.\nIf you are unclear about expectations, ask your instructor or GSI.\nDo not collaborate or work with other students on assignments or projects unless you have been given permission or instruction to do so."
+  },
+  {
+    "objectID": "index.html#other-class-policies",
+    "href": "index.html#other-class-policies",
+    "title": "Social Networks (Demography 180)",
+    "section": "Other class policies",
+    "text": "Other class policies\nReligious Accommodations\nRequests to accommodate a student’s religious creed by scheduling tests or examinations at alternative times should be submitted directly to the instructor. Reasonable common sense, judgment and the pursuit of mutual goodwill should result in the positive resolution of scheduling conflicts. The regular campus appeals process applies if a mutually satisfactory arrangement cannot be achieved.\nStatement on Academic Freedom\nBoth students and instructors have rights to academic freedom. Please respect the rights of others to express their points of view in the classroom.\nDSP Accommodations\nThe purpose of academic accommodations is to ensure that all students have a fair chance at academic success. Disability, or hardships such as basic needs insecurity, uncertain documentation and immigration status, medical and mental health concerns, pregnancy and parenting, significant familial distress, and experiencing sexual violence or harassment, can affect a student’s ability to satisfy particular course requirements. Students have the right to reasonable academic accommodations, without having to disclose personal information to instructors. For more information about accommodations, scheduling conflicts related to religious creed or extracurricular activities, please see the Academic Accommodations hub website.\nStudent Resources\nThe Student Learning Center provides a wide range of resources to promote learning and academic success for students. For information regarding these services, please consult the Student Learning Center Website: https://slc.berkeley.edu/\nClassroom Climate\nWe are all responsible for creating a learning environment that is welcoming, inclusive, equitable, and respectful. If you feel that these expectations are not being met, you can consult your instructor(s) or seek assistance from campus resources (see the Academic Accommodations website).\nAcademic Integrity\nThe high academic standard at the University of California, Berkeley, is reflected in each degree that is awarded. As a result, every student is expected to maintain this high standard by ensuring that all academic work reflects unique ideas or properly attributes the ideas to the original sources.\nThese are some basic expectations of students with regards to academic integrity:\n\nAny work submitted should be your own individual thoughts, and should not have been submitted for credit in another course unless you have prior written permission to re-use it in this course from this instructor.\nAll assignments must use “proper attribution,” meaning that you have identified the original source and extent or words or ideas that you reproduce or use in your assignment. This includes drafts and homework assignments!\nIn general, you should not turn in work that was done by an AI tool, such as an LLM (like ChatGPT). If you have any questions, please ask an instructor.\nIf you are unclear about expectations, ask your instructor or GSI.\nDo not collaborate or work with other students on assignments or projects unless you have been given permission or instruction to do so."
+  },
+  {
+    "objectID": "outline.html",
+    "href": "outline.html",
+    "title": "Outline",
+    "section": "",
+    "text": "Goals:\n\nquick overview of how Jupyter notebooks work\ntest submitting an assignment\n\nNotes:\nfrom Data 8 - basically, to test submission pipeline\n\n\n\nTODO - some kind of support / reading for students would be helpful\n\n\n\nGoals: - understand how personal network data are collected (reflect on strengths + limitations) - understand quantitative features of UC Berkeley student personal networks - collect ARD info on UC Berkeley students (later used in a lecture demo) ? collect interpersonal contact info on UC Berkeley students? - ask students: what is a name generator q you think would be effective at eliciting information about social isolation at UC Berkeley?\n\n\n\n-&gt; TODO - this should incorporate new material reviewing sampling + the bootstrap\n-&gt; goals: work with personal network survey data (reshape, etc)\n-&gt; goals: some kind of hypothesis test for significance\n-&gt; analyze personal network data from GSS (old hwk 01)\n\n\n\nGoals: use skills from lab 01 to analyze personal network data we collected on the our survey (so, take analysis of last year’s hwk 02 but update it to be about this year’s student survey data)\n\n\n\nGoals: - understand how a network is represented in a computer - understand how to load a network from a file - understand how to calculate some simple features of a network - avg degree, degree distribution - avg shortest path length / diameter / periphery / core / radius - clustering coefficient - understand how to plot networks (and some limitations of doing so) - a couple of important formulas: - max number of edges on n nodes - avg degree in terms of number of edges, number of nodes Data: Add Health survey data\nfrom lecture demo\n\nloading a complete network\navg degree\nplotting\nmost possible edges in a net with n nodes\n\nfrom prev lab (quite long):\n\nAdd health study\nrepresenting a network in a computer\nplotting networks\ndegree distribution\naverage degree + formula\navg shortest path lenth / diameter / periphery / core / radius\nrepeat calculations on all add health networks\n\n\n\n\nGoals: assess skills from Lab 02 - open up a complete network dataset - calculate some features of the network - plot the degree distribution - [old hwk02 on the clustering coefficient has material]\n\n\n\n-&gt; candidates: SOWT original, Onnela et al paper"
+  },
+  {
+    "objectID": "outline.html#lab-00---getting-started-in-jupyter-notebooks-old-lab0",
+    "href": "outline.html#lab-00---getting-started-in-jupyter-notebooks-old-lab0",
+    "title": "Outline",
+    "section": "",
+    "text": "Goals:\n\nquick overview of how Jupyter notebooks work\ntest submitting an assignment\n\nNotes:\nfrom Data 8 - basically, to test submission pipeline"
+  },
+  {
+    "objectID": "outline.html#lecture---personal-networks-social-connectedness-and-isolation-in-america",
+    "href": "outline.html#lecture---personal-networks-social-connectedness-and-isolation-in-america",
+    "title": "Outline",
+    "section": "",
+    "text": "TODO - some kind of support / reading for students would be helpful"
+  },
+  {
+    "objectID": "outline.html#hwk-01---collecting-personal-network-survey-data-old-hwk01",
+    "href": "outline.html#hwk-01---collecting-personal-network-survey-data-old-hwk01",
+    "title": "Outline",
+    "section": "",
+    "text": "Goals: - understand how personal network data are collected (reflect on strengths + limitations) - understand quantitative features of UC Berkeley student personal networks - collect ARD info on UC Berkeley students (later used in a lecture demo) ? collect interpersonal contact info on UC Berkeley students? - ask students: what is a name generator q you think would be effective at eliciting information about social isolation at UC Berkeley?"
+  },
+  {
+    "objectID": "outline.html#lab-01---analyzing-personal-network-survey-data-old-lab02",
+    "href": "outline.html#lab-01---analyzing-personal-network-survey-data-old-lab02",
+    "title": "Outline",
+    "section": "",
+    "text": "-&gt; TODO - this should incorporate new material reviewing sampling + the bootstrap\n-&gt; goals: work with personal network survey data (reshape, etc)\n-&gt; goals: some kind of hypothesis test for significance\n-&gt; analyze personal network data from GSS (old hwk 01)"
+  },
+  {
+    "objectID": "outline.html#hwk-02---analyzing-personal-network-data-from-the-gss",
+    "href": "outline.html#hwk-02---analyzing-personal-network-data-from-the-gss",
+    "title": "Outline",
+    "section": "",
+    "text": "Goals: use skills from lab 01 to analyze personal network data we collected on the our survey (so, take analysis of last year’s hwk 02 but update it to be about this year’s student survey data)"
+  },
+  {
+    "objectID": "outline.html#lab-02---working-w-complete-network-data-old-lab01-lecture-demo",
+    "href": "outline.html#lab-02---working-w-complete-network-data-old-lab01-lecture-demo",
+    "title": "Outline",
+    "section": "",
+    "text": "Goals: - understand how a network is represented in a computer - understand how to load a network from a file - understand how to calculate some simple features of a network - avg degree, degree distribution - avg shortest path length / diameter / periphery / core / radius - clustering coefficient - understand how to plot networks (and some limitations of doing so) - a couple of important formulas: - max number of edges on n nodes - avg degree in terms of number of edges, number of nodes Data: Add Health survey data\nfrom lecture demo\n\nloading a complete network\navg degree\nplotting\nmost possible edges in a net with n nodes\n\nfrom prev lab (quite long):\n\nAdd health study\nrepresenting a network in a computer\nplotting networks\ndegree distribution\naverage degree + formula\navg shortest path lenth / diameter / periphery / core / radius\nrepeat calculations on all add health networks"
+  },
+  {
+    "objectID": "outline.html#hwk-03---complete-network-data",
+    "href": "outline.html#hwk-03---complete-network-data",
+    "title": "Outline",
+    "section": "",
+    "text": "Goals: assess skills from Lab 02 - open up a complete network dataset - calculate some features of the network - plot the degree distribution - [old hwk02 on the clustering coefficient has material]"
+  },
+  {
+    "objectID": "outline.html#reading---todo",
+    "href": "outline.html#reading---todo",
+    "title": "Outline",
+    "section": "",
+    "text": "-&gt; candidates: SOWT original, Onnela et al paper"
+  },
+  {
+    "objectID": "outline.html#lecture---triadic-closure-strength-of-weak-ties",
+    "href": "outline.html#lecture---triadic-closure-strength-of-weak-ties",
+    "title": "Outline",
+    "section": "Lecture - Triadic closure; strength of weak ties",
+    "text": "Lecture - Triadic closure; strength of weak ties\n- idea of triadic closure\n- quantifying closure - clustering coefficient\n-&gt; Lecture Demo: triadic closure in an email network\n- sowt\n  - bridge + local bridge + span of a local bridge\n  - tie strength\n  - strong triadic closure property, weak triadic closure property\n  - Onnela et al / tie strength in mobile phone datasets"
+  },
+  {
+    "objectID": "outline.html#lecture---social-capital-and-structural-holes-this-seems-thin",
+    "href": "outline.html#lecture---social-capital-and-structural-holes-this-seems-thin",
+    "title": "Outline",
+    "section": "! Lecture - Social capital and structural holes [this seems thin]",
+    "text": "! Lecture - Social capital and structural holes [this seems thin]\n-&gt; Lecture Demo: strength of weak ties\n- TODO - add some more about social capital\n  - Jackson - typology of social capital\n  - ? Portes review article"
+  },
+  {
+    "objectID": "outline.html#lecture---networks-in-context---homophily-positive-negative-networks",
+    "href": "outline.html#lecture---networks-in-context---homophily-positive-negative-networks",
+    "title": "Outline",
+    "section": "Lecture - Networks in context - homophily; positive + negative networks",
+    "text": "Lecture - Networks in context - homophily; positive + negative networks\n-&gt; NB: two different sets of slides\n-&gt; Lecture Demo: structural balance"
+  },
+  {
+    "objectID": "outline.html#lab-03---enriching-network-data-and-testing-a-hypothesis-about-homophily-old-lab03",
+    "href": "outline.html#lab-03---enriching-network-data-and-testing-a-hypothesis-about-homophily-old-lab03",
+    "title": "Outline",
+    "section": "Lab 03 - Enriching network data and testing a hypothesis about homophily [old lab03]",
+    "text": "Lab 03 - Enriching network data and testing a hypothesis about homophily [old lab03]\nGoals: - add attributes to nodes and edges, and calculate things involving attributes - discuss ways to quantify homophily - test a hypothesis related to homophily - TODO - something about positive/negative edges? -&gt; TODO: add some overview/review of hypothesis testing if this was not done in an earlier lab"
+  },
+  {
+    "objectID": "outline.html#hwk-04---problem-set-i",
+    "href": "outline.html#hwk-04---problem-set-i",
+    "title": "Outline",
+    "section": "Hwk 04 - Problem set I",
+    "text": "Hwk 04 - Problem set I\nGoals: assess problem-solving with concepts covered so far, including: - look at old [hwk04], which has lots of qs - graph theory concepts (paths, cycles, connected components) - balance theory - friendship paradox - strength of weak ties - homophily / assortativity coefficients - TODO others?"
+  },
+  {
+    "objectID": "outline.html#lecture---intro-to-mathematical-models-the-er-random-network-model",
+    "href": "outline.html#lecture---intro-to-mathematical-models-the-er-random-network-model",
+    "title": "Outline",
+    "section": "Lecture - Intro to mathematical models; the ER random network model",
+    "text": "Lecture - Intro to mathematical models; the ER random network model"
+  },
+  {
+    "objectID": "outline.html#lecture---configuration-model-stochastic-block-model",
+    "href": "outline.html#lecture---configuration-model-stochastic-block-model",
+    "title": "Outline",
+    "section": "? Lecture - configuration model + stochastic block model",
+    "text": "? Lecture - configuration model + stochastic block model\n- revisit homophily w/ this context...\n-&gt; should this go after midterm?"
+  },
+  {
+    "objectID": "outline.html#lab-04---exploring-mathematical-models-of-network-structure",
+    "href": "outline.html#lab-04---exploring-mathematical-models-of-network-structure",
+    "title": "Outline",
+    "section": "Lab 04 - Exploring mathematical models of network structure",
+    "text": "Lab 04 - Exploring mathematical models of network structure\nGoals: - experience simulating networks from mathematical models - using ER, then configuration model as null hypothesis in a hypothesis test"
+  },
+  {
+    "objectID": "outline.html#lecture---centrality-the-friendship-paradox",
+    "href": "outline.html#lecture---centrality-the-friendship-paradox",
+    "title": "Outline",
+    "section": "Lecture - Centrality; The friendship paradox",
+    "text": "Lecture - Centrality; The friendship paradox\n- indices of centrality\n    - could add 1/(avg distance) as a measure of centrality in SIR/centrality notebook (this is called 'closeness centrality', I think)\n- jackson et al models?\n- maybe Ansell/Padgett - medici example, others?"
+  },
+  {
+    "objectID": "outline.html#reading---todo-1",
+    "href": "outline.html#reading---todo-1",
+    "title": "Outline",
+    "section": "Reading - TODO",
+    "text": "Reading - TODO"
+  },
+  {
+    "objectID": "outline.html#lecture---small-worlds",
+    "href": "outline.html#lecture---small-worlds",
+    "title": "Outline",
+    "section": "Lecture - Small worlds",
+    "text": "Lecture - Small worlds"
+  },
+  {
+    "objectID": "outline.html#lecture---search-in-small-worlds",
+    "href": "outline.html#lecture---search-in-small-worlds",
+    "title": "Outline",
+    "section": "Lecture - Search in small worlds",
+    "text": "Lecture - Search in small worlds"
+  },
+  {
+    "objectID": "outline.html#lecture---affiliation-networks-foci-one-mode-projections-of-bipartite-networks",
+    "href": "outline.html#lecture---affiliation-networks-foci-one-mode-projections-of-bipartite-networks",
+    "title": "Outline",
+    "section": "Lecture - Affiliation networks; foci; one-mode projections of bipartite networks",
+    "text": "Lecture - Affiliation networks; foci; one-mode projections of bipartite networks"
+  },
+  {
+    "objectID": "outline.html#lab-05---two-mode-networks-friendship-paradox-old-lab04",
+    "href": "outline.html#lab-05---two-mode-networks-friendship-paradox-old-lab04",
+    "title": "Outline",
+    "section": "Lab 05 - Two-mode networks; Friendship paradox [old lab04]",
+    "text": "Lab 05 - Two-mode networks; Friendship paradox [old lab04]\n-&gt; Maybe borrow material from later NB on friendship paradox? [old hwk7]"
+  },
+  {
+    "objectID": "outline.html#hwk-05---advanced-complete-network-data",
+    "href": "outline.html#hwk-05---advanced-complete-network-data",
+    "title": "Outline",
+    "section": "Hwk 05 - advanced complete network data",
+    "text": "Hwk 05 - advanced complete network data\nGoals: - assess skills from lab 03, enriching network data + lab 04, exploring - open a network that has node attributes with minimal hand-holding - calculate - avg degree - clustering coef - avg path length - test for homophily (maybe using more advanced null model) - maybe one-mode projection of a two-mode network - NB: MIGHT GIVE EXTRA TIME FOR THIS ONE -&gt; MAYBE borrow material from later notebook stuff on betwenness centrality? -&gt; Maybe borrow material from later NB on friendship paradox? [old hwk7]"
+  },
+  {
+    "objectID": "outline.html#hwk-06---problem-set-ii",
+    "href": "outline.html#hwk-06---problem-set-ii",
+    "title": "Outline",
+    "section": "Hwk 06 - Problem set II",
+    "text": "Hwk 06 - Problem set II\nGoal: assess problem-solving with - ER model - advanced network models - scale-free networks - two-mode networks - TODO others?"
+  },
+  {
+    "objectID": "outline.html#lecture---scale-free-networks",
+    "href": "outline.html#lecture---scale-free-networks",
+    "title": "Outline",
+    "section": "Lecture - Scale-free networks",
+    "text": "Lecture - Scale-free networks"
+  },
+  {
+    "objectID": "outline.html#lecture---community-detection-nb-could-make-this-a-little-longer",
+    "href": "outline.html#lecture---community-detection-nb-could-make-this-a-little-longer",
+    "title": "Outline",
+    "section": "Lecture - Community detection [NB: could make this a little longer]",
+    "text": "Lecture - Community detection [NB: could make this a little longer]"
+  },
+  {
+    "objectID": "outline.html#lecture---empirical-studies-of-network-structure",
+    "href": "outline.html#lecture---empirical-studies-of-network-structure",
+    "title": "Outline",
+    "section": "Lecture - empirical studies of network structure",
+    "text": "Lecture - empirical studies of network structure\n-&gt; include friendship paradox stuff here..."
+  },
+  {
+    "objectID": "outline.html#reading---todo-2",
+    "href": "outline.html#reading---todo-2",
+    "title": "Outline",
+    "section": "Reading - TODO",
+    "text": "Reading - TODO"
+  },
+  {
+    "objectID": "outline.html#lecture---diseases-and-simple-contagion-sir-model-maybe-add-si-model-sis-model",
+    "href": "outline.html#lecture---diseases-and-simple-contagion-sir-model-maybe-add-si-model-sis-model",
+    "title": "Outline",
+    "section": "Lecture - diseases and simple contagion; SIR model [maybe add SI model, SIS model]",
+    "text": "Lecture - diseases and simple contagion; SIR model [maybe add SI model, SIS model]"
+  },
+  {
+    "objectID": "outline.html#lecture---sir-model-on-networks-nb-could-make-this-a-little-longer",
+    "href": "outline.html#lecture---sir-model-on-networks-nb-could-make-this-a-little-longer",
+    "title": "Outline",
+    "section": "Lecture - SIR model on networks [NB: could make this a little longer]",
+    "text": "Lecture - SIR model on networks [NB: could make this a little longer]\n* the Menczer et al book (First Course in Network Science) has a good chapter on dynamics (ch 7), which has some interesting possible extensions\n    - SIS and rumor spreading model\n    - more on cascades\n    - opinion dynamics\n    - co-evolution of networks and dynamics"
+  },
+  {
+    "objectID": "outline.html#lab-06---simple-contagion-old-lab05",
+    "href": "outline.html#lab-06---simple-contagion-old-lab05",
+    "title": "Outline",
+    "section": "Lab 06 - Simple contagion [old lab05]",
+    "text": "Lab 06 - Simple contagion [old lab05]\n\nNB: some of the centrality material may get moved to earlier in the semester\nold lab05 has centrality and SIR model stuff…"
+  },
+  {
+    "objectID": "outline.html#hwk-07---centralityepidemic-model-in-us-legislators-old-hwk06",
+    "href": "outline.html#hwk-07---centralityepidemic-model-in-us-legislators-old-hwk06",
+    "title": "Outline",
+    "section": "Hwk 07 - centrality/epidemic model in US legislators [old hwk06]",
+    "text": "Hwk 07 - centrality/epidemic model in US legislators [old hwk06]\n\nmaybe incorporate community detection?"
+  },
+  {
+    "objectID": "outline.html#lecture---sexual-networks-concurrency-and-hiv",
+    "href": "outline.html#lecture---sexual-networks-concurrency-and-hiv",
+    "title": "Outline",
+    "section": "Lecture - Sexual networks, concurrency and HIV",
+    "text": "Lecture - Sexual networks, concurrency and HIV"
+  },
+  {
+    "objectID": "outline.html#lecture---empirical-studies-of-simple-contagion-todo---see-notes-on-stuff-to-add",
+    "href": "outline.html#lecture---empirical-studies-of-simple-contagion-todo---see-notes-on-stuff-to-add",
+    "title": "Outline",
+    "section": "Lecture - empirical studies of simple contagion [TODO - see notes on stuff to add]",
+    "text": "Lecture - empirical studies of simple contagion [TODO - see notes on stuff to add]"
+  },
+  {
+    "objectID": "outline.html#reading---todo-3",
+    "href": "outline.html#reading---todo-3",
+    "title": "Outline",
+    "section": "Reading - TODO",
+    "text": "Reading - TODO"
+  },
+  {
+    "objectID": "outline.html#lecture---social-influence-herding-and-cascades",
+    "href": "outline.html#lecture---social-influence-herding-and-cascades",
+    "title": "Outline",
+    "section": "Lecture - Social influence, herding, and cascades",
+    "text": "Lecture - Social influence, herding, and cascades\n##Lecture - Threshold models and complex contagion [NB: look at notes on complex contagion lectures]\n? Add material on imitation and social learning? (Bass model? DeGroot learning?)"
+  },
+  {
+    "objectID": "outline.html#lab-07-mini-project-prep",
+    "href": "outline.html#lab-07-mini-project-prep",
+    "title": "Outline",
+    "section": "Lab 07: Mini-project prep",
+    "text": "Lab 07: Mini-project prep\nGoals: - have students start from just a dataset and some questions, then write a notebook to perform the analysis + submit the results"
+  },
+  {
+    "objectID": "outline.html#mini-project",
+    "href": "outline.html#mini-project",
+    "title": "Outline",
+    "section": "Mini-project",
+    "text": "Mini-project\nGoals: - from lab 07: have students start from just a dataset and some questions, then write a notebook to perform the analysis + submit the results - analysis should cover - open up a new network dataset - calculate avg degree, degree distn, clustering coefficient - extract largest component - identify most central nodes? - and/or test for homophily with respect to some characteristic?\nNote: on this assignment, we might let them choose to work with a partner?"
+  },
+  {
+    "objectID": "outline.html#lecture---complex-contagion-on-networks-i",
+    "href": "outline.html#lecture---complex-contagion-on-networks-i",
+    "title": "Outline",
+    "section": "Lecture - Complex contagion on networks I",
+    "text": "Lecture - Complex contagion on networks I"
+  },
+  {
+    "objectID": "outline.html#lecture---complex-contagion-on-networks-ii",
+    "href": "outline.html#lecture---complex-contagion-on-networks-ii",
+    "title": "Outline",
+    "section": "Lecture - Complex contagion on networks II",
+    "text": "Lecture - Complex contagion on networks II"
+  },
+  {
+    "objectID": "outline.html#lecture---is-obesity-contagious-experimental-observational-studies-of-complex-contagion",
+    "href": "outline.html#lecture---is-obesity-contagious-experimental-observational-studies-of-complex-contagion",
+    "title": "Outline",
+    "section": "Lecture - Is obesity contagious? Experimental + observational studies of complex contagion",
+    "text": "Lecture - Is obesity contagious? Experimental + observational studies of complex contagion"
+  },
+  {
+    "objectID": "outline.html#hwk-08---problem-set-iii",
+    "href": "outline.html#hwk-08---problem-set-iii",
+    "title": "Outline",
+    "section": "Hwk 08 - Problem set III",
+    "text": "Hwk 08 - Problem set III\nGoals: assess problem-solving with concepts covered in last part of class, including - community detection - simple contagion / SIR model - influence / Bass model / DeGroot model - complex contagion"
+  },
+  {
+    "objectID": "outline.html#reading",
+    "href": "outline.html#reading",
+    "title": "Outline",
+    "section": "Reading",
+    "text": "Reading"
+  }
+]
