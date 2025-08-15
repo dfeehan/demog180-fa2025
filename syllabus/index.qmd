@@ -177,7 +177,7 @@ class_date <- syllabusr::make_class_date(base_date, 'TuTh')
 
 **Class meetings**: Tuesdays and Thursdays, 12:30-2:00PM, 166 Social Science Building   
 <BR>
-**Web**: <https://www.dennisfeehan.org/demog180-fa2025>  
+**Web**: <https://www.dennisfeehan.org/teaching/demog180-fa2025>  
 **Ed page**: <https://edstem.org/us/courses/81974/discussion>
 **Gradescope page**: <https://www.gradescope.com/courses/1084072>
 **Bcourses page**: <https://bcourses.berkeley.edu/courses/1547380>
