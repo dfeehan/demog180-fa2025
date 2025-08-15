@@ -13,6 +13,8 @@ This repo is configured to use Github Actions to update my personal website with
 
  You can see the configuration file for the github action in <.github/workflows/deploy-to-main-site.yml>. 
 
+Note that I use `renv` to summarize the packages that need to be installed to build the site, so if you add packages you'll have to update `renv`'s snapshot with something like `renv::snapshot()`.
+
 ### Adding a personal access token
 
 In order to add my personal access token to this repository, I followed these instructions (from Claude Sonnet 4):
