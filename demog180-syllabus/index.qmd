@@ -117,7 +117,7 @@ Required reading:
 
 * @watts_six_2003 preface-Ch.1
 * @easley_networks_2010 Ch.1-Ch.2
-* [optional] Fischer, [*Still connected*](https://muse.jhu.edu/book/15006), esp. Ch. 2 and 7 
+* Fischer, [*Still connected*](https://muse.jhu.edu/book/15006), Ch. 2 and 7
 
 
 ### Network structure: foundations {#sec:structure}
