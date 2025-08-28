@@ -244,11 +244,25 @@ tabshow %>%
 
 ## Requirements
 
+
+### Grades
+
+Your grade will be calculated as a weighted average of several different
+class requirements, which are explained in greater detail below.
+
+|  Component | % of grade |
+|  ------ | ------ |
+|  Labs  (~8; you can drop your lowest score) | 15 |
+|  Mini-projects (~4 of these) | 25 |
+|  Problem sets (3 of these)   | 10 |
+|  Mid-term exam  | 15 |
+|  Final exam | 30 |
+|  Participation + Quizzes | 5 |
+
+
 ### Lectures
 
-Lectures will introduce and develop key theoretical and technical concepts in the study of social networks.  To illustrate these ideas, some of the lectures will have a live lab component, where  we will interactively discuss and work through an analysis in a Jupyter notebook. These live labs will help us explore and develop intuition about key concepts in the course.
-
-The lectures are organized so that the first set of material, up to the mid-term exam, is a survey of the core theories, concepts, and methods needed to be familiar with social networks.  After the mid-term, the lectures will turn to an exploration of how these core ideas have been used, modified, and deepened in several different topic areas.
+Lectures will introduce and develop key theoretical and technical concepts in the study of social networks.  To illustrate these ideas, some of the lectures will have a live lab / demo component, where  we will interactively discuss and work through an analysis in a Jupyter notebook. These live labs will help us explore and develop intuition about key concepts in the course.
 
 *You are responsible for all of the material covered in lectures, as well as any announcements made there.*
 
@@ -264,7 +278,7 @@ We will also read chapters from popular science books written by leading network
 * @watts_six_2003
 * @epstein_invisible_2008
 
-Finally, we will read several journal and newspaper articles.
+There will also be selected other readings where they are relevant to our discussions.
 
 The readings serve two purposes: (1) they provide an introduction and reference for key concepts that we will need to study social networks; (2) they illustrate how social network ideas get used in real world research and applications across many different disciplines. You are expected to do the reading before each class. Whenever possible,  PDFs of the readings will be posted on the bCourses site.
 
@@ -288,22 +302,8 @@ There will be two in-class closed book examinations. The mid-term examination wi
 
 ### Participation and quizzes
 
-In some lectures, you will be asked to participate in discussions and interactive demonstrations. There will also be a small number (about 2) quizzes on bCourses over the semester. These quizzes will consist of a few multiple choice questions; the goal of these quizzes will be to ensure that you are staying up to date with the reading and lecture materials covered in the class (including guest lectures). 
+I will sometimes use iClicker to ask interactive questions during lectures. The correctness of responses to these questions will not matter - but they will be used as evidence of attendance.  In some lectures, you may also be asked to participate in discussions and interactive demonstrations. Finally, there will also be a small number (about 2) quizzes on bCourses over the semester. These quizzes will consist of a few multiple choice questions; the goal of these quizzes will be to ensure that you are staying up to date with the reading and lecture materials covered in the class (including guest lectures). I will announce the timing of these quizzes in advance.
 
-<!--### Sections                                                                                                                                                                                                                       -->
-
-<!--There will be optional weekly sections. The goal of these sections will be (1) to give you a chance to discuss the material and (2) to give you a chance to practice problems similar to the problems that will be on the homework.-->
-
-
-### Summary
-
-|  Component | % of grade |
-|  ------ | ------ |
-|  Homeworks (you can drop your lowest score) | 35 |
-|  Labs  | 15 |
-|  Mid-term exam | 15 |
-|  Final exam | 30 |
-|  Participation + Quizzes | 5 |
 
 ## Detailed modules
 
@@ -311,7 +311,7 @@ In some lectures, you will be asked to participate in discussions and interactiv
 
 ### Introduction to social networks and Personal networks {#sec:intro}
 	
-Reading: 
+Required reading: 
 
 * @watts_six_2003 preface-Ch.1
 * @easley_networks_2010 Ch.1-Ch.2
@@ -320,7 +320,7 @@ Reading:
 
 ### Network structure: foundations {#sec:structure}
 
-Reading:
+Required reading:
 
 * @easley_networks_2010 Ch. 3.1-3.3 (Triadic closure + tie strength)
 * @easley_networks_2010 Ch. 3.5 (Social capital)
@@ -333,7 +333,7 @@ Reading:
 
 ### Small worlds and beyond {#sec:smallworlds}
 
-Readings:
+Required readings:
 
 * @easley_networks_2010 Ch.4.3-4.4 (Affiliation networks)
 * @watts_six_2003 Ch. 3 (Small worlds)
@@ -345,34 +345,25 @@ Readings:
 
 ### Network structure: advanced {#sec:advancedstructure}
 
-Reading:
+Required reading:
 
 TBD
 
 ### Simple contagion {#sec:simplecontagion}
 
-Reading:
+Required reading:
 
 * @watts_six_2003 Ch.6
 * @easley_networks_2010 Ch. 21.1-21.3 (The SIR epidemic model)
 
 ### Concurrency in sexual networks {#sec:concurrency}
 
-* Sexual networks, concurrency, and HIV
-* @epstein_invisible_2008 Ch.2-4
-* OPTIONAL: @easley_networks_2010 Ch. 21.6
-* NOTE: if you are interested in reading more of the debate over concurrency, [this issue](https://link.springer.com/journal/10461/14/1/page/1) of the journal that Lurie and Rosenthal published in has papers on both sides. (These additional papers are not required reading.)
+Required reading:
 
-<!--
-
-### Cooperation {#sec:cooperation}
-
-Reading:
-
-* @easley_networks_2010 Ch. 6.1-6.2 
-* @axelrod_evolution_1984 Ch. 1 (on bCourses)
-
--->
+  * Sexual networks, concurrency, and HIV
+  * @epstein_invisible_2008 Ch.2-4
+  * OPTIONAL: @easley_networks_2010 Ch. 21.6
+  * NOTE: if you are interested in reading more of the debate over concurrency, [this issue](https://link.springer.com/journal/10461/14/1/page/1) of the journal that Lurie and Rosenthal published in has papers on both sides. (These additional papers are not required reading.)
 
 
 ### Social influence {#sec:socialinfluence}
@@ -389,6 +380,13 @@ Reading:
 * @watts_six_2003 Ch. 8
 * @easley_networks_2010 Ch. 19.1-19.6
 * [Study says obesity can be contagious](https://www.nytimes.com/2007/07/25/health/25cnd-fat.html)
+
+### Cooperation {#sec:cooperation}
+
+Required reading:
+
+* @easley_networks_2010 Ch. 6.1-6.2 
+* @axelrod_evolution_1984 Ch. 1 (on bCourses)
 
 
 
@@ -428,7 +426,11 @@ https://slc.berkeley.edu/
 
 **Classroom Climate**  
   
-We are all responsible for creating a learning environment that is welcoming, inclusive, equitable, and respectful. If you feel that these expectations are not being met, you can consult your instructor(s) or seek assistance from campus resources (see the [Academic Accommodations website](https://evcp.berkeley.edu/programs-resources/academic-accommodations-hub#accommodations)).
+We are all responsible for creating a learning environment that is welcoming, inclusive, equitable, and respectful. If you feel that these expectations are not being met, you can consult your instructor(s) or seek assistance from campus resources (see the [Academic Accommodations website](https://evcp.berkeley.edu/programs-resources/academic-accommodations-hub#accommodations)).  
+  
+**AI**  
+  
+Your work is expected to reflect your own ideas and should be prepared mostly without reliance on generative AI. Appropriate uses include translation, limited editing, early brainstorming, and formatting. Copying and pasting from an LLM into an assignment is not allowed, even if the results are then edited. If you are unsure if something is appropriate, ask. A good rule of thumb is to consider whether you would feel confident disclosing your process to your GSI or to me. Using AI extensively will be considered plagiarism and reported to Student Conduct.
   
 **Academic Integrity**  
   
