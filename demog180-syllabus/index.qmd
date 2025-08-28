@@ -234,11 +234,23 @@ The course readings will include selections from the textbook
 
 * @easley_networks_2010
 
+The Easley and Kleinberg book is freely available online from the author's website. You can also buy a paper copy if you like.
+
+For a couple of topics, I will also assign short readings from the textbook
+[A First Course in Network Science](https://www-cambridge-org.libproxy.berkeley.edu/highereducation/books/a-first-course-in-network-science/EE22722F27519D8BB1443C7225C57BAF#contents) by Menczer, Fortunato, and Davis:
+
+@menczer_first_2020
+
+This book is available online through UC Berkeley's library. Menczer et al also has Python code in it, so if you want to see more Python examples, it would be a good place to look.
+  
 We will also read chapters from popular science books written by leading network researchers, including selections from
 
 * @watts_six_2003
 * @epstein_invisible_2008
-
+  
+I will post scans of selections of the Epstein book as .pdfs. You should plan to buy
+the Watts book, which should not be very expensive.   
+  
 There will also be selected other readings where they are relevant to our discussions.
 
 The readings serve two purposes: (1) they provide an introduction and reference for key concepts that we will need to study social networks; (2) they illustrate how social network ideas get used in real world research and applications across many different disciplines. You are expected to do the reading before each class. Whenever possible,  PDFs of the readings will be posted on the bCourses site.
