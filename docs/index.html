@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -105,15 +85,6 @@ div.csl-indent {
   <li><a href="#quick-links" id="toc-quick-links" class="nav-link active" data-scroll-target="#quick-links">Quick links</a></li>
   <li><a href="#staff" id="toc-staff" class="nav-link" data-scroll-target="#staff">Staff</a></li>
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a>
-  <ul class="collapse">
-  <li><a href="#grades" id="toc-grades" class="nav-link" data-scroll-target="#grades">Grades</a></li>
-  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">Lectures</a></li>
-  <li><a href="#required-readings" id="toc-required-readings" class="nav-link" data-scroll-target="#required-readings">Required readings</a></li>
-  <li><a href="#homeworks-and-labs" id="toc-homeworks-and-labs" class="nav-link" data-scroll-target="#homeworks-and-labs">Homeworks and labs</a></li>
-  <li><a href="#exams" id="toc-exams" class="nav-link" data-scroll-target="#exams">Exams</a></li>
-  <li><a href="#participation-and-quizzes" id="toc-participation-and-quizzes" class="nav-link" data-scroll-target="#participation-and-quizzes">Participation and quizzes</a></li>
-  </ul></li>
   <li><a href="#detailed-modules" id="toc-detailed-modules" class="nav-link" data-scroll-target="#detailed-modules">Detailed modules</a></li>
   </ul>
 </nav>
@@ -143,12 +114,11 @@ div.csl-indent {
 <!--
 NOTES:
 - the chicago-syllabus.csl is from Kieran Healy: https://github.com/kjhealy/pandoc-templates/blob/master/csl/chicago-syllabus.csl
-- if changing this in the future, you may have to tweak the 'range' values in the part that loads the excel sheet
+- if changing this in the future, you may have to tweak the 'range' values in the part that loads the excel sheet (see grab_syllabus_gsheet in helper.R)
 
 WISHLIST:
 - be able to generate pdf version (right now, the table looks wonky - links don't render, NAs, etc)
 -->
-<!-- LINK REFERENCES -->
 <p>(Syllabus last updated: 2025-August-28)</p>
 <section id="quick-links" class="level2">
 <h2 class="anchored" data-anchor-id="quick-links">Quick links</h2>
@@ -173,23 +143,23 @@ Office hours: (see Ed post)</p>
 <p><strong>Please re-check the syllabus frequently; it will be updated as the semester progresses</strong></p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="rjfmzvxjrc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rjfmzvxjrc table {
+<div id="vaaoiyujln" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vaaoiyujln table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rjfmzvxjrc thead, #rjfmzvxjrc tbody, #rjfmzvxjrc tfoot, #rjfmzvxjrc tr, #rjfmzvxjrc td, #rjfmzvxjrc th {
+#vaaoiyujln thead, #vaaoiyujln tbody, #vaaoiyujln tfoot, #vaaoiyujln tr, #vaaoiyujln td, #vaaoiyujln th {
   border-style: none;
 }
 
-#rjfmzvxjrc p {
+#vaaoiyujln p {
   margin: 0;
   padding: 0;
 }
 
-#rjfmzvxjrc .gt_table {
+#vaaoiyujln .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -215,12 +185,12 @@ Office hours: (see Ed post)</p>
   border-left-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_caption {
+#vaaoiyujln .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rjfmzvxjrc .gt_title {
+#vaaoiyujln .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -232,7 +202,7 @@ Office hours: (see Ed post)</p>
   border-bottom-width: 0;
 }
 
-#rjfmzvxjrc .gt_subtitle {
+#vaaoiyujln .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -244,7 +214,7 @@ Office hours: (see Ed post)</p>
   border-top-width: 0;
 }
 
-#rjfmzvxjrc .gt_heading {
+#vaaoiyujln .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -256,13 +226,13 @@ Office hours: (see Ed post)</p>
   border-right-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_bottom_border {
+#vaaoiyujln .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_col_headings {
+#vaaoiyujln .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -277,7 +247,7 @@ Office hours: (see Ed post)</p>
   border-right-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_col_heading {
+#vaaoiyujln .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -297,7 +267,7 @@ Office hours: (see Ed post)</p>
   overflow-x: hidden;
 }
 
-#rjfmzvxjrc .gt_column_spanner_outer {
+#vaaoiyujln .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -309,15 +279,15 @@ Office hours: (see Ed post)</p>
   padding-right: 4px;
 }
 
-#rjfmzvxjrc .gt_column_spanner_outer:first-child {
+#vaaoiyujln .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rjfmzvxjrc .gt_column_spanner_outer:last-child {
+#vaaoiyujln .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rjfmzvxjrc .gt_column_spanner {
+#vaaoiyujln .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -329,11 +299,11 @@ Office hours: (see Ed post)</p>
   width: 100%;
 }
 
-#rjfmzvxjrc .gt_spanner_row {
+#vaaoiyujln .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rjfmzvxjrc .gt_group_heading {
+#vaaoiyujln .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -359,7 +329,7 @@ Office hours: (see Ed post)</p>
   text-align: left;
 }
 
-#rjfmzvxjrc .gt_empty_group_heading {
+#vaaoiyujln .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -374,15 +344,15 @@ Office hours: (see Ed post)</p>
   vertical-align: middle;
 }
 
-#rjfmzvxjrc .gt_from_md > :first-child {
+#vaaoiyujln .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rjfmzvxjrc .gt_from_md > :last-child {
+#vaaoiyujln .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rjfmzvxjrc .gt_row {
+#vaaoiyujln .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -401,7 +371,7 @@ Office hours: (see Ed post)</p>
   overflow-x: hidden;
 }
 
-#rjfmzvxjrc .gt_stub {
+#vaaoiyujln .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -414,7 +384,7 @@ Office hours: (see Ed post)</p>
   padding-right: 5px;
 }
 
-#rjfmzvxjrc .gt_stub_row_group {
+#vaaoiyujln .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -428,15 +398,15 @@ Office hours: (see Ed post)</p>
   vertical-align: top;
 }
 
-#rjfmzvxjrc .gt_row_group_first td {
+#vaaoiyujln .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rjfmzvxjrc .gt_row_group_first th {
+#vaaoiyujln .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rjfmzvxjrc .gt_summary_row {
+#vaaoiyujln .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -446,16 +416,16 @@ Office hours: (see Ed post)</p>
   padding-right: 5px;
 }
 
-#rjfmzvxjrc .gt_first_summary_row {
+#vaaoiyujln .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_first_summary_row.thick {
+#vaaoiyujln .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rjfmzvxjrc .gt_last_summary_row {
+#vaaoiyujln .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -465,7 +435,7 @@ Office hours: (see Ed post)</p>
   border-bottom-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_grand_summary_row {
+#vaaoiyujln .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -475,7 +445,7 @@ Office hours: (see Ed post)</p>
   padding-right: 5px;
 }
 
-#rjfmzvxjrc .gt_first_grand_summary_row {
+#vaaoiyujln .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -485,7 +455,7 @@ Office hours: (see Ed post)</p>
   border-top-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_last_grand_summary_row_top {
+#vaaoiyujln .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -495,11 +465,11 @@ Office hours: (see Ed post)</p>
   border-bottom-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_striped {
+#vaaoiyujln .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rjfmzvxjrc .gt_table_body {
+#vaaoiyujln .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -508,7 +478,7 @@ Office hours: (see Ed post)</p>
   border-bottom-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_footnotes {
+#vaaoiyujln .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -522,7 +492,7 @@ Office hours: (see Ed post)</p>
   border-right-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_footnote {
+#vaaoiyujln .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -531,7 +501,7 @@ Office hours: (see Ed post)</p>
   padding-right: 5px;
 }
 
-#rjfmzvxjrc .gt_sourcenotes {
+#vaaoiyujln .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -545,7 +515,7 @@ Office hours: (see Ed post)</p>
   border-right-color: #D3D3D3;
 }
 
-#rjfmzvxjrc .gt_sourcenote {
+#vaaoiyujln .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -553,72 +523,72 @@ Office hours: (see Ed post)</p>
   padding-right: 5px;
 }
 
-#rjfmzvxjrc .gt_left {
+#vaaoiyujln .gt_left {
   text-align: left;
 }
 
-#rjfmzvxjrc .gt_center {
+#vaaoiyujln .gt_center {
   text-align: center;
 }
 
-#rjfmzvxjrc .gt_right {
+#vaaoiyujln .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rjfmzvxjrc .gt_font_normal {
+#vaaoiyujln .gt_font_normal {
   font-weight: normal;
 }
 
-#rjfmzvxjrc .gt_font_bold {
+#vaaoiyujln .gt_font_bold {
   font-weight: bold;
 }
 
-#rjfmzvxjrc .gt_font_italic {
+#vaaoiyujln .gt_font_italic {
   font-style: italic;
 }
 
-#rjfmzvxjrc .gt_super {
+#vaaoiyujln .gt_super {
   font-size: 65%;
 }
 
-#rjfmzvxjrc .gt_footnote_marks {
+#vaaoiyujln .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rjfmzvxjrc .gt_asterisk {
+#vaaoiyujln .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rjfmzvxjrc .gt_indent_1 {
+#vaaoiyujln .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rjfmzvxjrc .gt_indent_2 {
+#vaaoiyujln .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rjfmzvxjrc .gt_indent_3 {
+#vaaoiyujln .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rjfmzvxjrc .gt_indent_4 {
+#vaaoiyujln .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rjfmzvxjrc .gt_indent_5 {
+#vaaoiyujln .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rjfmzvxjrc .katex-display {
+#vaaoiyujln .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rjfmzvxjrc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vaaoiyujln div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1030,8 +1000,111 @@ Office hours: (see Ed post)</p>
 </div>
 </div>
 </section>
-<section id="requirements" class="level2">
-<h2 class="anchored" data-anchor-id="requirements">Requirements</h2>
+<section id="detailed-modules" class="level2">
+<h2 class="anchored" data-anchor-id="detailed-modules">Detailed modules</h2>
+<div class="singlespace">
+<section id="sec:intro" class="level3">
+<h3 class="anchored" data-anchor-id="sec:intro">Introduction to social networks and Personal networks</h3>
+<p>Required reading:</p>
+<ul>
+<li><span class="citation" data-cites="watts_six_2003">D. J. Watts <em>Six Degrees: <span>The</span> Science of a Connected Age</em> (WW Norton &amp; Company, 2003).</span> preface-Ch.1</li>
+<li><span class="citation" data-cites="easley_networks_2010">David Easley and Jon Kleinberg <em>Networks, Crowds, and Markets: <span>Reasoning</span> about a Highly Connected World</em> (Cambridge University Press, 2010).</span> Ch.1-Ch.2</li>
+<li>[optional] Fischer, <a href="https://muse.jhu.edu/book/15006"><em>Still connected</em></a>, esp.&nbsp;Ch. 2 and 7</li>
+</ul>
+</section>
+<section id="sec:structure" class="level3">
+<h3 class="anchored" data-anchor-id="sec:structure">Network structure: foundations</h3>
+<p>Required reading:</p>
+<ul>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 3.1-3.3 (Triadic closure + tie strength)</li>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 3.5 (Social capital)</li>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch.5.1-5.2 (Positive and negative relationships)</li>
+<li><a href="https://opinionator.blogs.nytimes.com/2012/09/17/friends-you-can-count-on/">Friends you can count on</a></li>
+<li><a href="https://www.journals.uchicago.edu/doi/abs/10.1086/229693">Why your friends have more friends than you do</a></li>
+<li><span class="citation" data-cites="watts_six_2003">Watts <em>Six Degrees</em>.</span> Ch. 2 (Random networks)</li>
+<li>TBD - possibly some empirical examples</li>
+</ul>
+</section>
+<section id="sec:smallworlds" class="level3">
+<h3 class="anchored" data-anchor-id="sec:smallworlds">Small worlds and beyond</h3>
+<p>Required readings:</p>
+<ul>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch.4.3-4.4 (Affiliation networks)</li>
+<li><span class="citation" data-cites="watts_six_2003">Watts <em>Six Degrees</em>.</span> Ch. 3 (Small worlds)</li>
+<li><span class="citation" data-cites="watts_six_2003">Watts <em>Six Degrees</em>.</span> Ch. 4 (Beyond small worlds; scale-free networks)</li>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 20.1-20.2 (Small worlds)</li>
+<li><span class="citation" data-cites="watts_six_2003">Watts <em>Six Degrees</em>.</span> Ch. 5 (Search in networks)</li>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 20.3-20.5 (Search in small worlds)</li>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 18.1-18.5 (Scale-free networks)</li>
+</ul>
+</section>
+<section id="sec:advancedstructure" class="level3">
+<h3 class="anchored" data-anchor-id="sec:advancedstructure">Network structure: advanced</h3>
+<p>Required reading:</p>
+<p>TBD</p>
+</section>
+<section id="sec:simplecontagion" class="level3">
+<h3 class="anchored" data-anchor-id="sec:simplecontagion">Simple contagion</h3>
+<p>Required reading:</p>
+<ul>
+<li><span class="citation" data-cites="watts_six_2003">Watts <em>Six Degrees</em>.</span> Ch.6</li>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 21.1-21.3 (The SIR epidemic model)</li>
+</ul>
+</section>
+<section id="sec:concurrency" class="level3">
+<h3 class="anchored" data-anchor-id="sec:concurrency">Concurrency in sexual networks</h3>
+<p>Required reading:</p>
+<ul>
+<li>Sexual networks, concurrency, and HIV</li>
+<li><span class="citation" data-cites="epstein_invisible_2008">Helen Epstein <em>The Invisible Cure: Why We Are Losing the Fight Against <span>AIDS</span> in <span>Africa</span></em> (Macmillan, 2008).</span> Ch.2-4</li>
+<li>OPTIONAL: <span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 21.6</li>
+<li>NOTE: if you are interested in reading more of the debate over concurrency, <a href="https://link.springer.com/journal/10461/14/1/page/1">this issue</a> of the journal that Lurie and Rosenthal published in has papers on both sides. (These additional papers are not required reading.)</li>
+</ul>
+</section>
+<section id="sec:socialinfluence" class="level3">
+<h3 class="anchored" data-anchor-id="sec:socialinfluence">Social influence</h3>
+<p>Reading:</p>
+<ul>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 16.1-16.2; parts of 16.3-16.6; 16.7</li>
+<li><span class="citation" data-cites="watts_six_2003">Watts <em>Six Degrees</em>.</span> Ch. 7</li>
+</ul>
+</section>
+<section id="sec:complexcontagion" class="level3">
+<h3 class="anchored" data-anchor-id="sec:complexcontagion">Complex contagion</h3>
+<p>Reading:</p>
+<ul>
+<li><span class="citation" data-cites="watts_six_2003">Watts <em>Six Degrees</em>.</span> Ch. 8</li>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 19.1-19.6</li>
+<li><a href="https://www.nytimes.com/2007/07/25/health/25cnd-fat.html">Study says obesity can be contagious</a></li>
+</ul>
+</section>
+<section id="sec:cooperation" class="level3">
+<h3 class="anchored" data-anchor-id="sec:cooperation">Cooperation</h3>
+<p>Required reading:</p>
+<ul>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span> Ch. 6.1-6.2</li>
+<li><span class="citation" data-cites="axelrod_evolution_1984">Robert M. Axelrod <em>The Evolution of Cooperation</em> (New York : Basic Books, c1984., 1984).</span> Ch. 1 (on bCourses)</li>
+</ul>
+<!--
+### Week 15: Guest lectures {#sec:guests}
+
+Reading:
+
+* TBA
+
+-->
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Requirements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <section id="grades" class="level3">
 <h3 class="anchored" data-anchor-id="grades">Grades</h3>
 <p>Your grade will be calculated as a weighted average of several different class requirements, which are explained in greater detail below.</p>
@@ -1079,12 +1152,12 @@ Office hours: (see Ed post)</p>
 <h3 class="anchored" data-anchor-id="required-readings">Required readings</h3>
 <p>The course readings will include selections from the textbook <a href="https://www.cs.cornell.edu/home/kleinber/networks-book/">Networks, Crowds, and Markets</a> by Easley and Kleinberg:</p>
 <ul>
-<li><span class="citation" data-cites="easley_networks_2010">David Easley and Jon Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets: <span>Reasoning</span> about a Highly Connected World</em> (Cambridge University Press, 2010)</a>.</span></li>
+<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <em>Networks, Crowds, and Markets</em>.</span></li>
 </ul>
 <p>We will also read chapters from popular science books written by leading network researchers, including selections from</p>
 <ul>
-<li><span class="citation" data-cites="watts_six_2003">D. J. Watts <a href="#ref-watts_six_2003" role="doc-biblioref"><em>Six Degrees: <span>The</span> Science of a Connected Age</em> (WW Norton &amp; Company, 2003)</a>.</span></li>
-<li><span class="citation" data-cites="epstein_invisible_2008">Helen Epstein <a href="#ref-epstein_invisible_2008" role="doc-biblioref"><em>The Invisible Cure: Why We Are Losing the Fight Against <span>AIDS</span> in <span>Africa</span></em> (Macmillan, 2008)</a>.</span></li>
+<li><span class="citation" data-cites="watts_six_2003">Watts <em>Six Degrees</em>.</span></li>
+<li><span class="citation" data-cites="epstein_invisible_2008">Epstein <em>The Invisible Cure</em>.</span></li>
 </ul>
 <p>There will also be selected other readings where they are relevant to our discussions.</p>
 <p>The readings serve two purposes: (1) they provide an introduction and reference for key concepts that we will need to study social networks; (2) they illustrate how social network ideas get used in real world research and applications across many different disciplines. You are expected to do the reading before each class. Whenever possible, PDFs of the readings will be posted on the bCourses site.</p>
@@ -1105,103 +1178,21 @@ Office hours: (see Ed post)</p>
 <h3 class="anchored" data-anchor-id="participation-and-quizzes">Participation and quizzes</h3>
 <p>I will sometimes use iClicker to ask interactive questions during lectures. The correctness of responses to these questions will not matter - but they will be used as evidence of attendance. In some lectures, you may also be asked to participate in discussions and interactive demonstrations. Finally, there will also be a small number (about 2) quizzes on bCourses over the semester. These quizzes will consist of a few multiple choice questions; the goal of these quizzes will be to ensure that you are staying up to date with the reading and lecture materials covered in the class (including guest lectures). I will announce the timing of these quizzes in advance.</p>
 </section>
-</section>
-<section id="detailed-modules" class="level2">
-<h2 class="anchored" data-anchor-id="detailed-modules">Detailed modules</h2>
-<div class="singlespace">
-<section id="sec:intro" class="level3">
-<h3 class="anchored" data-anchor-id="sec:intro">Introduction to social networks and Personal networks</h3>
-<p>Required reading:</p>
-<ul>
-<li><span class="citation" data-cites="watts_six_2003">Watts <a href="#ref-watts_six_2003" role="doc-biblioref"><em>Six Degrees</em></a>.</span> preface-Ch.1</li>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch.1-Ch.2</li>
-<li>[optional] Fischer, <a href="https://muse.jhu.edu/book/15006"><em>Still connected</em></a>, esp.&nbsp;Ch. 2 and 7</li>
-</ul>
-</section>
-<section id="sec:structure" class="level3">
-<h3 class="anchored" data-anchor-id="sec:structure">Network structure: foundations</h3>
-<p>Required reading:</p>
-<ul>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 3.1-3.3 (Triadic closure + tie strength)</li>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 3.5 (Social capital)</li>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch.5.1-5.2 (Positive and negative relationships)</li>
-<li><a href="https://opinionator.blogs.nytimes.com/2012/09/17/friends-you-can-count-on/">Friends you can count on</a></li>
-<li><a href="https://www.journals.uchicago.edu/doi/abs/10.1086/229693">Why your friends have more friends than you do</a></li>
-<li><span class="citation" data-cites="watts_six_2003">Watts <a href="#ref-watts_six_2003" role="doc-biblioref"><em>Six Degrees</em></a>.</span> Ch. 2 (Random networks)</li>
-<li>TBD - possibly some empirical examples</li>
-</ul>
-</section>
-<section id="sec:smallworlds" class="level3">
-<h3 class="anchored" data-anchor-id="sec:smallworlds">Small worlds and beyond</h3>
-<p>Required readings:</p>
-<ul>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch.4.3-4.4 (Affiliation networks)</li>
-<li><span class="citation" data-cites="watts_six_2003">Watts <a href="#ref-watts_six_2003" role="doc-biblioref"><em>Six Degrees</em></a>.</span> Ch. 3 (Small worlds)</li>
-<li><span class="citation" data-cites="watts_six_2003">Watts <a href="#ref-watts_six_2003" role="doc-biblioref"><em>Six Degrees</em></a>.</span> Ch. 4 (Beyond small worlds; scale-free networks)</li>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 20.1-20.2 (Small worlds)</li>
-<li><span class="citation" data-cites="watts_six_2003">Watts <a href="#ref-watts_six_2003" role="doc-biblioref"><em>Six Degrees</em></a>.</span> Ch. 5 (Search in networks)</li>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 20.3-20.5 (Search in small worlds)</li>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 18.1-18.5 (Scale-free networks)</li>
-</ul>
-</section>
-<section id="sec:advancedstructure" class="level3">
-<h3 class="anchored" data-anchor-id="sec:advancedstructure">Network structure: advanced</h3>
-<p>Required reading:</p>
-<p>TBD</p>
-</section>
-<section id="sec:simplecontagion" class="level3">
-<h3 class="anchored" data-anchor-id="sec:simplecontagion">Simple contagion</h3>
-<p>Required reading:</p>
-<ul>
-<li><span class="citation" data-cites="watts_six_2003">Watts <a href="#ref-watts_six_2003" role="doc-biblioref"><em>Six Degrees</em></a>.</span> Ch.6</li>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 21.1-21.3 (The SIR epidemic model)</li>
-</ul>
-</section>
-<section id="sec:concurrency" class="level3">
-<h3 class="anchored" data-anchor-id="sec:concurrency">Concurrency in sexual networks</h3>
-<p>Required reading:</p>
-<ul>
-<li>Sexual networks, concurrency, and HIV</li>
-<li><span class="citation" data-cites="epstein_invisible_2008">Epstein <a href="#ref-epstein_invisible_2008" role="doc-biblioref"><em>The Invisible Cure</em></a>.</span> Ch.2-4</li>
-<li>OPTIONAL: <span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 21.6</li>
-<li>NOTE: if you are interested in reading more of the debate over concurrency, <a href="https://link.springer.com/journal/10461/14/1/page/1">this issue</a> of the journal that Lurie and Rosenthal published in has papers on both sides. (These additional papers are not required reading.)</li>
-</ul>
-</section>
-<section id="sec:socialinfluence" class="level3">
-<h3 class="anchored" data-anchor-id="sec:socialinfluence">Social influence</h3>
-<p>Reading:</p>
-<ul>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 16.1-16.2; parts of 16.3-16.6; 16.7</li>
-<li><span class="citation" data-cites="watts_six_2003">Watts <a href="#ref-watts_six_2003" role="doc-biblioref"><em>Six Degrees</em></a>.</span> Ch. 7</li>
-</ul>
-</section>
-<section id="sec:complexcontagion" class="level3">
-<h3 class="anchored" data-anchor-id="sec:complexcontagion">Complex contagion</h3>
-<p>Reading:</p>
-<ul>
-<li><span class="citation" data-cites="watts_six_2003">Watts <a href="#ref-watts_six_2003" role="doc-biblioref"><em>Six Degrees</em></a>.</span> Ch. 8</li>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 19.1-19.6</li>
-<li><a href="https://www.nytimes.com/2007/07/25/health/25cnd-fat.html">Study says obesity can be contagious</a></li>
-</ul>
-</section>
-<section id="sec:cooperation" class="level3">
-<h3 class="anchored" data-anchor-id="sec:cooperation">Cooperation</h3>
-<p>Required reading:</p>
-<ul>
-<li><span class="citation" data-cites="easley_networks_2010">Easley and Kleinberg <a href="#ref-easley_networks_2010" role="doc-biblioref"><em>Networks, Crowds, and Markets</em></a>.</span> Ch. 6.1-6.2</li>
-<li><span class="citation" data-cites="axelrod_evolution_1984">Robert M. Axelrod <a href="#ref-axelrod_evolution_1984" role="doc-biblioref"><em>The Evolution of Cooperation</em> (New York : Basic Books, c1984., 1984)</a>.</span> Ch. 1 (on bCourses)</li>
-</ul>
-<!--
-### Week 15: Guest lectures {#sec:guests}
-
-Reading:
-
-* TBA
-
--->
-</section>
-<section id="other-class-policies" class="level2">
-<h2 class="anchored" data-anchor-id="other-class-policies">Other class policies</h2>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Other class policies
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p><strong>Religious Accommodations</strong></p>
 <p>Requests to accommodate a student’s religious creed by scheduling tests or examinations at alternative times should be submitted directly to the instructor. Reasonable common sense, judgment and the pursuit of mutual goodwill should result in the positive resolution of scheduling conflicts. The regular campus appeals process applies if a mutually satisfactory arrangement cannot be achieved.</p>
 <p><strong>Statement on Academic Freedom</strong></p>
@@ -1224,27 +1215,16 @@ Reading:
 <li>If you are unclear about expectations, ask your instructor or GSI.</li>
 <li>Do not collaborate or work with other students on assignments or projects unless you have been given permission or instruction to do so.</li>
 </ul>
+</div>
+</div>
+</div>
 
 
 </section>
 </div>
-
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-axelrod_evolution_1984" class="csl-entry" role="listitem">
-Axelrod, Robert M. <em>The Evolution of Cooperation</em>. New York : Basic Books, c1984., 1984.
-</div>
-<div id="ref-easley_networks_2010" class="csl-entry" role="listitem">
-Easley, David, and Jon Kleinberg. <em>Networks, Crowds, and Markets: <span>Reasoning</span> about a Highly Connected World</em>. Cambridge University Press, 2010.
-</div>
-<div id="ref-epstein_invisible_2008" class="csl-entry" role="listitem">
-Epstein, Helen. <em>The Invisible Cure: Why We Are Losing the Fight Against <span>AIDS</span> in <span>Africa</span></em>. Macmillan, 2008.
-</div>
-<div id="ref-watts_six_2003" class="csl-entry" role="listitem">
-Watts, D. J. <em>Six Degrees: <span>The</span> Science of a Connected Age</em>. WW Norton &amp; Company, 2003.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

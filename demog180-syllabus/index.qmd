@@ -4,7 +4,7 @@ editor: source
 pagetitle: "Social Networks (Demog 180)"
 bibliography: class_networks.bib
 csl: chicago-syllabus.csl
-#suppress-bibliography: True
+suppress-bibliography: True
 output:
   html_document: 
     css: syllabus.css
@@ -20,146 +20,22 @@ output:
 <!--
 NOTES:
 - the chicago-syllabus.csl is from Kieran Healy: https://github.com/kjhealy/pandoc-templates/blob/master/csl/chicago-syllabus.csl
-- if changing this in the future, you may have to tweak the 'range' values in the part that loads the excel sheet
+- if changing this in the future, you may have to tweak the 'range' values in the part that loads the excel sheet (see grab_syllabus_gsheet in helper.R)
 
 WISHLIST:
 - be able to generate pdf version (right now, the table looks wonky - links don't render, NAs, etc)
 -->
 
-{{< include 2025_links.qmd >}}
-
-```{r helper, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-# see
-# https://github.com/tidyverse/googlesheets4/issues/274
-range_read_cells_format <- function(
-    ss, sheet = NULL, range = NULL, skip = 0, n_max = Inf,
-    discard_empty = TRUE, group = c('background', 'text', 'other')) {
-
-  group = match.arg(group)
-  oot <- range_read_cells(ss, sheet, range, skip, n_max, 'full', discard_empty)
-
-  if (group == 'background') {
-    # for some colors, one or more components may be missing from the list
-    out <- list()
-    for (p in c('red', 'green', 'blue')) {
-      y <- map(
-        oot$cell, ~ .x$effectiveFormat$backgroundColorStyle$rgbColor[[p]])
-      out[[p]] <- map_dbl(y, ~ if (is.null(.x)) 0 else .x) # RStudio no like
-    }
-    out <- tibble::as_tibble(out)
-
-  } else if (group == 'text') {
-    cols <- c(
-      'fontFamily', 'fontSize', 'bold', 'italic', 'strikethrough', 'underline')
-    out1 <- map_dfr(oot$cell, ~ .x$effectiveFormat$textFormat[cols])
-
-    out2 <- list()
-    for (p in c('red', 'green', 'blue')) {
-      y <- map(
-        oot$cell,
-        ~ .x$effectiveFormat$textFormat$foregroundColorStyle$rgbColor[[p]])
-      out2[[p]] <- map_dbl(y, ~ if (is.null(.x)) 0 else .x) # RStudio no like
-    }
-    out2 <- tibble::as_tibble(out2)
-    out <- cbind(out1, out2)
-
-  } else {
-    out1 <- map_dfr(oot$cell, ~ .x$effectiveFormat$padding)
-    # colnames(out1) = paste0('padding_', colnames(out1))
-
-    cols = c('horizontalAlignment', 'verticalAlignment',
-             'wrapStrategy', 'hyperlinkDisplayType')
-    out2 <- map_dfr(oot$cell, ~ .x$effectiveFormat[cols])
-    out <- cbind(out1, out2)
-
-  }
-
-  out <- oot %>%
-    dplyr::select(!cell) %>%
-    cbind(out)
-  out
-}
-
-#d1 <- range_read_cells_format(ss, sheet, range, group = 'background')
-#d2 <- range_read_cells_format(ss, sheet, range, group = 'text')
-#d3 <- range_read_cells_format(ss, sheet, range, group = 'other')
-```
-
 ```{r download-schedule, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 
-library(googlesheets4)
-library(googledrive)
-library(readxl)
-library(writexl)
-library(tibble)
-library(knitr)
-library(kableExtra)
-library(dplyr)
-# my helper package
-library(syllabusr)
-library(lubridate)
-library(purrr)
-library(stringr)
-library(glue)
+# this file also loads some packages
+source('helper.R')
 
-#library(tidyxl)
-
-library(gt)
-
-googlesheets4::gs4_deauth()
-googledrive::drive_deauth()
-
-class_fn <- "demog180 - 2024"
 # this file is set so that anyone can read it (but not edit it).
 # this means we can avoid annoying authentication requirements
-#class_url <- "https://docs.google.com/spreadsheets/d/14DsJVPw3BXiia1KzBNDR4_PHzfvJMILiNFfEbVCPd4s"
-#class_url <- "https://docs.google.com/spreadsheets/d/1tN5y8aAkGpWRguF5rnGeEKbDPQQta1SlrdHS30yxFXI"
-#class_url <- "https://docs.google.com/spreadsheets/d/1uO3F-KZqm_okTbjkntecx6bGhszb-muvNdusRKPdCKo/edit#gid=0"
-#class_url <- "https://docs.google.com/spreadsheets/d/1lGJc7WlWR0aEjI3QGEtUKJcpFJcadkM5OPamQHHaD4M/edit?gid=1108852408#gid=1108852408"
 class_url <- "https://docs.google.com/spreadsheets/d/1NbBhyBkNbxTl_MnDGjq5-44N6CKa8ppksMel-3wZ_W4/edit?gid=0#gid=0"
 
-#content_range <- "C2:I32"
-content_range_row_offset <- 2
-content_range_col_offset <- 3 
-content_range_height <- 31
-content_range_width <- 7
-content_range <- toupper(paste0(letters[content_range_col_offset], 
-                                content_range_row_offset, 
-                                ":", 
-                                letters[content_range_col_offset+content_range_width-1], 
-                                content_range_row_offset + content_range_height - 1))
-
-sheet <- drive_get(class_url) %>%
-  read_sheet(sheet='overview', 
-             range=content_range)
-
-# read the cell colors
-cell_col <- drive_get(class_url) %>% range_read_cells_format(sheet='overview', 
-                                                             range=content_range, 
-                                                             group = 'background')
-
-# we'll blank out any cells whose background color is not white
-# (this allows us to easily stage stuff in the google sheet, and then
-#  publish it by changing the background color + recompiling)
-cell_to_blank <- cell_col %>% filter(red < 1 | blue < 1 | green < 1)
-
-# write a local, xlsx version of the syllabus
-write_xlsx(list(overview=sheet),
-           path=paste0(class_fn, '.xlsx'))
-
-# and read that local version in, so that we're working with a read_excel object
-tab <- read_excel(paste0(class_fn, '.xlsx'), 
-                  sheet='overview')
-
-# now turn cells that have background that is some color other than white into blank 
-# (they are not to be published yet)
-if(nrow(cell_to_blank) > 0) {
-  for(i in 1:nrow(cell_to_blank)) {
-    cur_row <- cell_to_blank[i,]
-    #tab[cur_row$row - content_range_row_offset, cur_row$col - content_range_col_offset + 1] <- "XXX"
-    tab[cur_row$row - content_range_row_offset, cur_row$col - content_range_col_offset + 1] <- NA
-  }
-}
+tab <- grab_syllabus_gsheet(class_url)
 
 ## deduce all of the states based on the starting date
 ## THIS ASSUMES THAT
@@ -204,19 +80,13 @@ The science of social networks focuses on measuring, modeling, and understanding
 ```{r show-schedule, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 tabshow <- tab %>%
   mutate(Date = map_chr(row_number(), ~ class_date(.x)),
-         # ugly, but working. the contortions are needed to convert the readable class date into
-         # a Date object
-         Week = map_dbl(Date, ~ syllabusr::week_num( mdy(paste(str_replace(.x, ".*,", ""), year(base_date))))))
+         # ugly, but working. the contortions are needed to 
+         # convert the readable class date into a Date object
+         Week = map_dbl(Date, 
+                        ~ syllabusr::week_num( mdy(paste(str_replace(.x, ".*,", ""), 
+                                                         year(base_date))))))
 
 options(knitr.kable.NA = '')
-
-#tabshow %>%
-#  kable() %>%
-#  kable_styling(bootstrap_options = c('striped'))
-
-# Trying to get what are called 'reference-style links' to work
-# in markdown column
-# https://www.markdownguide.org/basic-syntax/
 
 tabshow %>%
   gt() %>%
@@ -233,76 +103,8 @@ tabshow %>%
               Demo ~ px(20),
               Lab ~ px(10),
               Hwk ~ px(10))
-  #cols_width( Theme ~ px(50),
-  #            Week ~ px(50),
-  #            Date ~ px(100),
-  #            Topic ~ px(500),
-  #            Lecture ~ px(200),
-  #            Lab ~ px(200),
-  #            Hwk ~ px(200))
 ```
 
-## Requirements
-
-
-### Grades
-
-Your grade will be calculated as a weighted average of several different
-class requirements, which are explained in greater detail below.
-
-|  Component | % of grade |
-|  ------ | ------ |
-|  Labs  (~8; you can drop your lowest score) | 15 |
-|  Mini-projects (~4 of these) | 25 |
-|  Problem sets (3 of these)   | 10 |
-|  Mid-term exam  | 15 |
-|  Final exam | 30 |
-|  Participation + Quizzes | 5 |
-
-
-### Lectures
-
-Lectures will introduce and develop key theoretical and technical concepts in the study of social networks.  To illustrate these ideas, some of the lectures will have a live lab / demo component, where  we will interactively discuss and work through an analysis in a Jupyter notebook. These live labs will help us explore and develop intuition about key concepts in the course.
-
-*You are responsible for all of the material covered in lectures, as well as any announcements made there.*
-
-### Required readings
-
-The course readings will include selections from the textbook 
-[Networks, Crowds, and Markets](https://www.cs.cornell.edu/home/kleinber/networks-book/) by Easley and Kleinberg: 
-
-* @easley_networks_2010
-
-We will also read chapters from popular science books written by leading network researchers, including selections from
-
-* @watts_six_2003
-* @epstein_invisible_2008
-
-There will also be selected other readings where they are relevant to our discussions.
-
-The readings serve two purposes: (1) they provide an introduction and reference for key concepts that we will need to study social networks; (2) they illustrate how social network ideas get used in real world research and applications across many different disciplines. You are expected to do the reading before each class. Whenever possible,  PDFs of the readings will be posted on the bCourses site.
-
-
-### Homeworks and labs
-
-There will be a total of 6 to 8 homeworks, a similar number of labs, and one mini-project.  These assignments are a critical part of the learning you will do in this class: they give you an opportunity to explore the topics we cover in the readings and in lecture on your own. They also give you a chance to practice your writing and your data analysis and programming skills.  Most homeworks and labs will ask you to provide some written arguments and to solve some problems by writing Python code in a Jupyter notebook.  
-
-Labs are graded based on effort; therefore, you can get full credit on a lab even if you do not get all of the answers right. Labs must be handed in on time for full credit. 
-
-Homeworks and are graded on correctness and must be handed in on time for full credit. However, we will drop the homework with the lowest score; thus, you can miss handing in one homework over the course of the semester without it affecting your grade. (Note that you cannot drop the grade for the mini-project.)
-
-The mini-project is like an extended homework that comes after all of the notebook-based homeworks. The goal is to give you a chance to start from scratch with a new network dataset and to demonstrate that you can perform an analysis on the network with minimal hand-holding. It will count as two homeworks.
-
-**Collaboration**: It can be helpful and educational to discuss the assignments with other students in the class, but (1) all of the work should be your own (i.e., you are not allowed to just copy code, answers, or arguments); (2) you should make a note of the names of the other students you worked with when handing your assignments in. Please treat AI tools like ChatGPT like another student: follow rules (1) and (2); that is, don't copy code or text directly from an AI tool and please make a note of any tool you consulted at the top of your assignment.
-
-
-### Exams
-
-There will be two in-class closed book examinations. The mid-term examination will be held during normal class time in our normal classroom; the timing of this midterm will be designed to assess your mastery of the core concepts in social networks. The final will be held during the final exam period (see the date/time above). The final exam will be cumulative.
-
-### Participation and quizzes
-
-I will sometimes use iClicker to ask interactive questions during lectures. The correctness of responses to these questions will not matter - but they will be used as evidence of attendance.  In some lectures, you may also be asked to participate in discussions and interactive demonstrations. Finally, there will also be a small number (about 2) quizzes on bCourses over the semester. These quizzes will consist of a few multiple choice questions; the goal of these quizzes will be to ensure that you are staying up to date with the reading and lecture materials covered in the class (including guest lectures). I will announce the timing of these quizzes in advance.
 
 
 ## Detailed modules
@@ -399,6 +201,74 @@ Reading:
 
 -->
 
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
+## Requirements
+
+
+### Grades
+
+Your grade will be calculated as a weighted average of several different
+class requirements, which are explained in greater detail below.
+
+|  Component | % of grade |
+|  ------ | ------ |
+|  Labs  (~8; you can drop your lowest score) | 15 |
+|  Mini-projects (~4 of these) | 25 |
+|  Problem sets (3 of these)   | 10 |
+|  Mid-term exam  | 15 |
+|  Final exam | 30 |
+|  Participation + Quizzes | 5 |
+
+
+### Lectures
+
+Lectures will introduce and develop key theoretical and technical concepts in the study of social networks.  To illustrate these ideas, some of the lectures will have a live lab / demo component, where  we will interactively discuss and work through an analysis in a Jupyter notebook. These live labs will help us explore and develop intuition about key concepts in the course.
+
+*You are responsible for all of the material covered in lectures, as well as any announcements made there.*
+
+### Required readings
+
+The course readings will include selections from the textbook 
+[Networks, Crowds, and Markets](https://www.cs.cornell.edu/home/kleinber/networks-book/) by Easley and Kleinberg: 
+
+* @easley_networks_2010
+
+We will also read chapters from popular science books written by leading network researchers, including selections from
+
+* @watts_six_2003
+* @epstein_invisible_2008
+
+There will also be selected other readings where they are relevant to our discussions.
+
+The readings serve two purposes: (1) they provide an introduction and reference for key concepts that we will need to study social networks; (2) they illustrate how social network ideas get used in real world research and applications across many different disciplines. You are expected to do the reading before each class. Whenever possible,  PDFs of the readings will be posted on the bCourses site.
+
+
+### Homeworks and labs
+
+There will be a total of 6 to 8 homeworks, a similar number of labs, and one mini-project.  These assignments are a critical part of the learning you will do in this class: they give you an opportunity to explore the topics we cover in the readings and in lecture on your own. They also give you a chance to practice your writing and your data analysis and programming skills.  Most homeworks and labs will ask you to provide some written arguments and to solve some problems by writing Python code in a Jupyter notebook.  
+
+Labs are graded based on effort; therefore, you can get full credit on a lab even if you do not get all of the answers right. Labs must be handed in on time for full credit. 
+
+Homeworks and are graded on correctness and must be handed in on time for full credit. However, we will drop the homework with the lowest score; thus, you can miss handing in one homework over the course of the semester without it affecting your grade. (Note that you cannot drop the grade for the mini-project.)
+
+The mini-project is like an extended homework that comes after all of the notebook-based homeworks. The goal is to give you a chance to start from scratch with a new network dataset and to demonstrate that you can perform an analysis on the network with minimal hand-holding. It will count as two homeworks.
+
+**Collaboration**: It can be helpful and educational to discuss the assignments with other students in the class, but (1) all of the work should be your own (i.e., you are not allowed to just copy code, answers, or arguments); (2) you should make a note of the names of the other students you worked with when handing your assignments in. Please treat AI tools like ChatGPT like another student: follow rules (1) and (2); that is, don't copy code or text directly from an AI tool and please make a note of any tool you consulted at the top of your assignment.
+
+
+### Exams
+
+There will be two in-class closed book examinations. The mid-term examination will be held during normal class time in our normal classroom; the timing of this midterm will be designed to assess your mastery of the core concepts in social networks. The final will be held during the final exam period (see the date/time above). The final exam will be cumulative.
+
+### Participation and quizzes
+
+I will sometimes use iClicker to ask interactive questions during lectures. The correctness of responses to these questions will not matter - but they will be used as evidence of attendance.  In some lectures, you may also be asked to participate in discussions and interactive demonstrations. Finally, there will also be a small number (about 2) quizzes on bCourses over the semester. These quizzes will consist of a few multiple choice questions; the goal of these quizzes will be to ensure that you are staying up to date with the reading and lecture materials covered in the class (including guest lectures). I will announce the timing of these quizzes in advance.
+
+:::
+
+::: {.callout-note appearance='simple' icon=false collapse='true'}
+
 ## Other class policies  
   
 **Religious Accommodations**  
@@ -443,3 +313,5 @@ These are some basic expectations of students with regards to academic integrity
 * In general, you should not turn in work that was done by an AI tool, such as an LLM (like ChatGPT). If you have any questions, please ask an instructor.
 * If you are unclear about expectations, ask your instructor or GSI.
 * Do not collaborate or work with other students on assignments or projects unless you have been given permission or instruction to do so.
+
+:::
