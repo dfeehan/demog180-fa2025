@@ -125,6 +125,7 @@ Required reading:
 Required reading:
 
 * @easley_networks_2010 Ch. 3.1-3.3 (Triadic closure + tie strength)
+* @easley_networks_2010 Ch.4.3-4.4 (Affiliation networks)
 * @easley_networks_2010 Ch. 3.5 (Social capital)
 * @easley_networks_2010 Ch.5.1-5.2 (Positive and negative relationships)
 * [Friends you can count on](https://opinionator.blogs.nytimes.com/2012/09/17/friends-you-can-count-on/)
@@ -137,19 +138,20 @@ Required reading:
 
 Required readings:
 
-* @easley_networks_2010 Ch.4.3-4.4 (Affiliation networks)
 * @watts_six_2003 Ch. 3 (Small worlds)
 * @watts_six_2003 Ch. 4 (Beyond small worlds; scale-free networks)
 * @easley_networks_2010 Ch. 20.1-20.2 (Small worlds)
 * @watts_six_2003 Ch. 5 (Search in networks)
 * @easley_networks_2010 Ch. 20.3-20.5 (Search in small worlds)
 * @easley_networks_2010 Ch. 18.1-18.5 (Scale-free networks)
+* @menczer_first_2020 Sec. 5.4 (Preferential attachment)
 
 ### Network structure: advanced {#sec:advancedstructure}
 
 Required reading:
 
-TBD
+* @menczer_first_2020 Sec. 5.3 (Configuration model; you can skip Exponential Random Graphs)
+* @menczer_first_2020 Sec. 6.3 (Community detection; you can skim 6.3.2 and 6.3.3; be sure to read 6.3.4 on Stochastic Block Modeling)
 
 ### Simple contagion {#sec:simplecontagion}
 
@@ -280,6 +282,7 @@ I will sometimes use iClicker to ask interactive questions during lectures. The 
 :::
 
 ::: {.callout-note appearance='simple' icon=false collapse='true'}
+
 
 ## Other class policies  
   
