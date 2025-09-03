@@ -3,17 +3,13 @@ title: "Social Networks (Demography 180)"
 editor: source
 pagetitle: "Social Networks (Demog 180)"
 bibliography: class_networks.bib
-csl: chicago-syllabus.csl
+#csl: chicago-syllabus.csl
+csl: chicago-modified.csl
 suppress-bibliography: True
 output:
   html_document: 
     css: syllabus.css
-    pandoc_args: [
-                  #"-F", "pandoc-include",
-                  #"--citeproc",
-                  #"-F", "pandoc-crossref", 
-                  #"-F", "pandoc-citeproc"
-                  ]
+    link-external-newwindow: true
   pdf_document: default
 ---
 
@@ -64,12 +60,12 @@ class_date <- syllabusr::make_class_date(base_date, 'TuTh')
 
 ## Staff
    
-**Professor Dennis Feehan**, feehan [at] berkeley.edu  
+**Professor Dennis Feehan**, feehan [at] berkeley.edu (but please post questions on Ed)  
 Office hours: (see Ed post)  
 
 **TA: Xinghe Pan**  
 **TA: Nick Nolte**  
-  
+
 ## Overview
 
 The science of social networks focuses on measuring, modeling, and understanding the different ways that people are connected to one another.  In this class, we will use a broad toolkit of theories and methods drawn from the social, natural, and mathematical sciences to learn what a social network is, to understand how to work with social network data, and to illustrate some of the ways that social networks can be useful in theory and in practice. We will see that network ideas are powerful enough to be used everywhere from CDC and UNAIDS, where network models help epidemiologists prevent the spread of HIV, to Silicon Valley, where data scientists use network ideas to build products that enable people all across the globe to connect with one another.
@@ -111,12 +107,14 @@ tabshow %>%
 
 <div class="singlespace">
 
-### Introduction to social networks and Personal networks {#sec:intro}
+### Introduction to social networks and personal networks {#sec:intro}
 	
 Required reading: 
 
-* @watts_six_2003 preface-Ch.1
-* @easley_networks_2010 Ch.1-Ch.2
+* @watts_six_2003 
+  * preface-Ch.1
+* @easley_networks_2010 
+  * Ch.1-Ch.2
 * Fischer, [*Still connected*](https://muse.jhu.edu/book/15006), Ch. 2 and 7
 
 
@@ -124,10 +122,11 @@ Required reading:
 
 Required reading:
 
-* @easley_networks_2010 Ch. 3.1-3.3 (Triadic closure + tie strength)
-* @easley_networks_2010 Ch.4.3-4.4 (Affiliation networks)
-* @easley_networks_2010 Ch. 3.5 (Social capital)
-* @easley_networks_2010 Ch.5.1-5.2 (Positive and negative relationships)
+* @easley_networks_2010 
+  * Ch. 3.1-3.3 (Triadic closure + tie strength)
+  * Ch.4.3-4.4 (Affiliation networks)
+  * Ch. 3.5 (Social capital)
+  * Ch.5.1-5.2 (Positive and negative relationships)
 * [Friends you can count on](https://opinionator.blogs.nytimes.com/2012/09/17/friends-you-can-count-on/)
 * [Why your friends have more friends than you do](https://www.journals.uchicago.edu/doi/abs/10.1086/229693)
 * @watts_six_2003 Ch. 2 (Random networks)
@@ -138,59 +137,76 @@ Required reading:
 
 Required readings:
 
-* @watts_six_2003 Ch. 3 (Small worlds)
-* @watts_six_2003 Ch. 4 (Beyond small worlds; scale-free networks)
-* @easley_networks_2010 Ch. 20.1-20.2 (Small worlds)
-* @watts_six_2003 Ch. 5 (Search in networks)
-* @easley_networks_2010 Ch. 20.3-20.5 (Search in small worlds)
-* @easley_networks_2010 Ch. 18.1-18.5 (Scale-free networks)
-* @menczer_first_2020 Sec. 5.4 (Preferential attachment)
+* @watts_six_2003 
+  * Ch. 3 (Small worlds)
+  * Ch. 4 (Beyond small worlds; scale-free networks)
+  * Ch. 5 (Search in networks)
+* @easley_networks_2010 
+  * Ch. 20.1-20.2 (Small worlds)
+  * Ch. 20.3-20.5 (Search in small worlds)
+  * Ch. 18.1-18.5 (Scale-free networks)
+* @menczer_first_2020 
+  * Sec. 5.4 (Preferential attachment)
 
 ### Network structure: advanced {#sec:advancedstructure}
 
 Required reading:
 
-* @menczer_first_2020 Sec. 5.3 (Configuration model; you can skip Exponential Random Graphs)
-* @menczer_first_2020 Sec. 6.3 (Community detection; you can skim 6.3.2 and 6.3.3; be sure to read 6.3.4 on Stochastic Block Modeling)
+* @menczer_first_2020 
+  * Sec. 5.3 (Configuration model; you can skip Exponential Random Graphs)
+  * Sec. 6.3 (Community detection; you can skim 6.3.2 and 6.3.3; be sure to read 6.3.4 on Stochastic Block Modeling)
 
 ### Simple contagion {#sec:simplecontagion}
 
 Required reading:
 
-* @watts_six_2003 Ch.6
-* @easley_networks_2010 Ch. 21.1-21.3 (The SIR epidemic model)
+* @watts_six_2003 
+  * Ch.6
+* @easley_networks_2010 
+  * Ch. 21.1-21.3 (The SIR epidemic model)
 
 ### Concurrency in sexual networks {#sec:concurrency}
 
 Required reading:
 
   * Sexual networks, concurrency, and HIV
-  * @epstein_invisible_2008 Ch.2-4
-  * OPTIONAL: @easley_networks_2010 Ch. 21.6
+  * @epstein_invisible_2008 
+    * Ch.2-4
+    
+Optional reading    
+  
+  * @easley_networks_2010 
+    * Ch. 21.6
   * NOTE: if you are interested in reading more of the debate over concurrency, [this issue](https://link.springer.com/journal/10461/14/1/page/1) of the journal that Lurie and Rosenthal published in has papers on both sides. (These additional papers are not required reading.)
 
 
 ### Social influence {#sec:socialinfluence}
 
-Reading:
+Required reading:
 
-* @easley_networks_2010 Ch. 16.1-16.2; parts of 16.3-16.6; 16.7
-* @watts_six_2003 Ch. 7 
+* @easley_networks_2010 
+  * Ch. 16.1-16.2; 
+  * parts of 16.3-16.6; 16.7
+* @watts_six_2003 
+  * Ch. 7 
 
 ### Complex contagion {#sec:complexcontagion}
 
 Reading:
 
-* @watts_six_2003 Ch. 8
-* @easley_networks_2010 Ch. 19.1-19.6
+* @watts_six_2003 
+  * Ch. 8
+* @easley_networks_2010 
+  * Ch. 19.1-19.6
 * [Study says obesity can be contagious](https://www.nytimes.com/2007/07/25/health/25cnd-fat.html)
 
 ### Cooperation {#sec:cooperation}
 
 Required reading:
 
-* @easley_networks_2010 Ch. 6.1-6.2 
-* @axelrod_evolution_1984 Ch. 1 (on bCourses)
+* @easley_networks_2010 
+  * Ch. 6.1-6.2 
+* @axelrod_evolution_1984 Ch. 1 (pdf in Ed post)
 
 
 

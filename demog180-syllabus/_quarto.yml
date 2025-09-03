@@ -10,8 +10,9 @@ website:
 
 format:
   html:
+    link-external-newwindow: true
     theme: cosmo
-    css: styles.css
+    css: syllabus.css
     toc: true
 
 editor: source
