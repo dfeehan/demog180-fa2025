@@ -130,6 +130,11 @@ Required reading:
 * [Friends you can count on](https://opinionator.blogs.nytimes.com/2012/09/17/friends-you-can-count-on/)
 * [Why your friends have more friends than you do](https://www.journals.uchicago.edu/doi/abs/10.1086/229693)
 
+Optional reading:  
+  
+* @menczer_first_2020 
+  * Ch 1.1-1.7 (Introduction to graph theory and `networkx` Python package)
+* the [`networkx` package tutorial](https://networkx.org/documentation/stable/tutorial.html) might be helpful if you want a systematic introduction to `networkx`
 
 ### Small worlds and beyond {#sec:smallworlds}
 
