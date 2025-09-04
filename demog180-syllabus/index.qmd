@@ -134,6 +134,7 @@ Optional reading:
   
 * @menczer_first_2020 
   * Ch 1.1-1.7 (Introduction to graph theory and `networkx` Python package)
+  * Appendix A: Python tutorial
 * the [`networkx` package tutorial](https://networkx.org/documentation/stable/tutorial.html) might be helpful if you want a systematic introduction to `networkx`
 
 ### Small worlds and beyond {#sec:smallworlds}
