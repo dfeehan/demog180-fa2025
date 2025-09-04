@@ -117,7 +117,6 @@ Required reading:
   * Ch.1-Ch.2
 * Fischer, [*Still connected*](https://muse.jhu.edu/book/15006), Ch. 2 and 7
 
-
 ### Network structure: foundations {#sec:structure}
 
 Required reading:
@@ -127,10 +126,9 @@ Required reading:
   * Ch.4.3-4.4 (Affiliation networks)
   * Ch. 3.5 (Social capital)
   * Ch.5.1-5.2 (Positive and negative relationships)
+<!-- SHOULD THESE BE PART OF AN ASSIGNMENT? -->
 * [Friends you can count on](https://opinionator.blogs.nytimes.com/2012/09/17/friends-you-can-count-on/)
 * [Why your friends have more friends than you do](https://www.journals.uchicago.edu/doi/abs/10.1086/229693)
-* @watts_six_2003 Ch. 2 (Random networks)
-* TBD - possibly some empirical examples
 
 
 ### Small worlds and beyond {#sec:smallworlds}
@@ -138,6 +136,7 @@ Required reading:
 Required readings:
 
 * @watts_six_2003 
+  * Ch. 2 (Random networks)
   * Ch. 3 (Small worlds)
   * Ch. 4 (Beyond small worlds; scale-free networks)
   * Ch. 5 (Search in networks)
