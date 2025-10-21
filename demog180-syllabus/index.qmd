@@ -55,7 +55,7 @@ class_date <- syllabusr::make_class_date(base_date, 'TuTh')
 **Bcourses page**: <https://bcourses.berkeley.edu/courses/1547380>  
 **Lecture slides**: <https://drive.google.com/drive/folders/1jgKjkAImWtAzIusbB9mLGhthLyISQHZ2?usp=drive_link>  
 <BR>
-**Final exam**: TBA   
+**Final exam**: December 16th, 8am-11am in Lewis 9 (our classroom)   
 <BR>
 
 ## Staff
