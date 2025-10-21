@@ -55,7 +55,7 @@ class_date <- syllabusr::make_class_date(base_date, 'TuTh')
 **Bcourses page**: <https://bcourses.berkeley.edu/courses/1547380>  
 **Lecture slides**: <https://drive.google.com/drive/folders/1jgKjkAImWtAzIusbB9mLGhthLyISQHZ2?usp=drive_link>  
 <BR>
-**Final exam**: TBA   
+**Final exam**: December 16th, 8am-11am in Lewis 9 (our classroom)   
 <BR>
 
 ## Staff
@@ -134,6 +134,7 @@ Optional reading:
   
 * @menczer_first_2020 
   * Ch 1.1-1.7 (Introduction to graph theory and `networkx` Python package)
+  * Ch 2.2-2.5 (paths and distances; connectedness and components; trees; finding shortest paths)
   * Appendix A: Python tutorial
 * the [`networkx` package tutorial](https://networkx.org/documentation/stable/tutorial.html) might be helpful if you want a systematic introduction to `networkx`
 
@@ -151,7 +152,14 @@ Required readings:
   * Ch. 20.3-20.5 (Search in small worlds)
   * Ch. 18.1-18.5 (Scale-free networks)
 * @menczer_first_2020 
-  * Sec. 5.4 (Preferential attachment)
+  * Sec. 5.4 (Preferential attachment, related to scale-free networks)
+
+Optional readings:
+
+* @menczer_first_2020 
+  * Sec. 2.1 ('Birds of a feather' - homophily + assortativity)
+  * Sec. 2.6-2.8 (six degrees, clustering coefficient)
+  * Sec. 7.4 (Search; especially 7.4.2, Searchability)
 
 ### Network structure: advanced {#sec:advancedstructure}
 
